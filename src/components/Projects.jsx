@@ -1,35 +1,39 @@
+import './Projects.css'; // Importamos los estilos nuevos
+
 export default function Projects() {
-  const misProyectos = [
+  const projects = [
     {
       id: 1,
-      titulo: "Mi primer Portfolio",
-      desc: "Web profesional construida con React y Vite.",
-      link: "https://github.com",
-      tech: ["React", "Vite", "GitHub Actions"]
+      title: "Portfolio Developer Story",
+      description: "Mi primer sitio profesional con React, Vite y despliegue automático con GitHub Actions.",
+      tags: ["React", "Vite", "CSS3"],
+      link: "https://github.com"
     },
     {
       id: 2,
-      titulo: "Proyecto Futuro",
-      desc: "Aquí irá tu siguiente gran idea.",
-      link: "#",
-      tech: ["JavaScript", "CSS"]
+      title: "Próximo Proyecto...",
+      description: "Un espacio reservado para mi siguiente gran desarrollo con Node.js o APIs externas.",
+      tags: ["Future", "Node.js"],
+      link: "#"
     }
   ];
 
   return (
-    <section style={{ padding: '50px 20px', maxWidth: '1000px', margin: '0 auto' }}>
-      <h2 style={{ textAlign: 'center', color: '#646cff' }}>Proyectos</h2>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', marginTop: '30px' }}>
-        {misProyectos.map(project => (
-          <div key={project.id} style={{ background: '#2a2a2a', padding: '20px', borderRadius: '15px', border: '1px solid #444' }}>
-            <h3>{project.titulo}</h3>
-            <p style={{ color: '#aaa' }}>{project.desc}</p>
-            <div style={{ marginBottom: '15px' }}>
-              {project.tech.map(t => (
-                <small key={t} style={{ background: '#444', padding: '2px 8px', borderRadius: '5px', marginRight: '5px' }}>{t}</small>
+    <section className="projects-container">
+      <h2 style={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: '10px' }}>Mis Proyectos</h2>
+      <p style={{ textAlign: 'center', color: '#666' }}>Una selección de mis trabajos más recientes</p>
+      
+      <div className="projects-grid">
+        {projects.map((p) => (
+          <div key={p.id} className="project-card">
+            <h3>{p.title}</h3>
+            <p style={{ color: '#aaa', lineHeight: '1.6' }}>{p.description}</p>
+            <div style={{ marginTop: '15px' }}>
+              {p.tags.map(tag => (
+                <span key={tag} className="tech-tag">{tag}</span>
               ))}
             </div>
-            <a href={project.link} target="_blank" style={{ color: '#646cff', textDecoration: 'none', fontWeight: 'bold' }}>Ver código →</a>
+            <a href={p.link} target="_blank" className="project-link">Explorar Código →</a>
           </div>
         ))}
       </div>
