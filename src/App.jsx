@@ -1,14 +1,13 @@
 import Hero from './components/Hero'
 import Projects from './components/Projects'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div style={{ backgroundColor: '#1a1a1a', minHeight: '100vh', color: 'white' }}>
+    <div style={{ backgroundColor: '#1a1a1a', color: 'white', minHeight: '100vh' }}>
       <Hero />
       <Projects />
-      <footer style={{ padding: '40px', textAlign: 'center', color: '#666', borderTop: '1px solid #333' }}>
-        <p>© 2026 mmoreno-byte | Construido con React + Vite</p>
-      </footer>
+      <Footer />
     </div>
   )
 }
