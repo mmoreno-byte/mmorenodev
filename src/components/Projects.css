@@ -56,3 +56,15 @@
 .project-link:hover {
   color: #646cff;
 }
+
+/* Media Query para móviles */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Una sola columna en el móvil */
+    padding: 10px;
+  }
+
+  .projects-container h2 {
+    font-size: 2rem; /* Texto un poco más pequeño en el móvil */
+  }
+}

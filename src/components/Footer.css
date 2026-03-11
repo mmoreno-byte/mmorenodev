@@ -34,3 +34,13 @@
   font-size: 0.9rem;
   margin-top: 40px;
 }
+
+@media (max-width: 480px) {
+  .footer-socials {
+    gap: 20px; /* Menos espacio entre iconos en móviles */
+  }
+  
+  .social-icon {
+    font-size: 2rem;
+  }
+}
