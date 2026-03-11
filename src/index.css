@@ -72,32 +72,3 @@ button:focus-visible {
   background-color: #0f0f0f; /* Un negro más profundo */
   color: #e0e0e0;
 }
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-/* Selección de texto con tu color de marca */
-::selection {
-  background-color: #646cff;
-  color: white;
-}
-
-/* Scrollbar personalizada para que combine */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #0f0f0f;
-}
-::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #646cff;
-}
