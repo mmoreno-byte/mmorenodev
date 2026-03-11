@@ -1,4 +1,5 @@
 import './Projects.css'; // Importamos los estilos nuevos
+import fotoProyecto from '../assets/proyecto1.jpg'; // <--- IMPORTA TU IMAGEN AQUÍ
 
 export default function Projects() {
   const projects = [
