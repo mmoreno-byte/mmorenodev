@@ -6,6 +6,7 @@ function App() {
   return (
     <div style={{ backgroundColor: '#1a1a1a', color: 'white', minHeight: '100vh' }}>
       <Hero />
+       <About />
       <Projects />
       <Footer />
     </div>
