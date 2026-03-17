@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar'
+import ThemeToggle from './components/ThemeToggle'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
@@ -10,6 +11,7 @@ function App() {
   return (
     <div style={{ backgroundColor: '#1a1a1a', color: 'white', minHeight: '100vh' }}>
       <Navbar />
+      <ThemeToggle />
       <div id="hero"><Hero /></div>
       <div id="about"><About /></div>
       <div id="skills"><Skills /></div>

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { FaSun, FaMoon } from 'react-icons/fa';
 import './Navbar.css';
 
 const links = [
@@ -13,17 +12,12 @@ const links = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  useEffect(() => {
-    document.body.classList.toggle('light-mode', !darkMode);
-  }, [darkMode]);
 
   const handleClick = (e, href) => {
     e.preventDefault();
@@ -36,10 +30,6 @@ export default function Navbar() {
       <span className="navbar-logo">mmoreno-byte</span>
 
       <div className="navbar-right">
-        <button className="navbar-theme" onClick={() => setDarkMode(!darkMode)} title="Cambiar tema">
-          {darkMode ? <FaSun /> : <FaMoon />}
-        </button>
-
         <button className="navbar-burger" onClick={() => setMenuOpen(!menuOpen)}>
           <span /><span /><span />
         </button>
