@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <header style={{ padding: '80px 20px', textAlign: 'center', background: 'linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%)', color: 'white' }}>
       <img 
-        src="https://github.com" 
+        src="https://github.com/mmoreno-byte.png" 
         alt="Foto de perfil" 
         style={{ borderRadius: '50%', width: '140px', border: '3px solid #646cff', boxShadow: '0 0 20px rgba(100, 108, 255, 0.4)' }} 
       />
@@ -24,6 +24,7 @@ export default function Hero() {
         <FaNodeJs style={{ ...iconStyle, color: '#339933' }} title="Node.js" />
         <FaHtml5 style={{ ...iconStyle, color: '#e34f26' }} title="HTML5" />
         <FaCss3Alt style={{ ...iconStyle, color: '#1572b6' }} title="CSS3" />
+        <FaGithub style={{ ...iconStyle, color: '#fff' }} title="GitHub" />
       </div>
     </header>
   );

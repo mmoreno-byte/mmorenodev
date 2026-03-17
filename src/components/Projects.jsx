@@ -1,6 +1,4 @@
-import './Projects.css'; // Importamos los estilos nuevos
-// 1. IMPORTA TU IMAGEN AQUÍ (Usa el nombre real de tu archivo)
-import miImagen from '../assets/proyecto1.jpg'; 
+import './Projects.css';
 
 export default function Projects() {
   const projects = [
@@ -9,7 +7,7 @@ export default function Projects() {
       title: "Portfolio Developer Story",
       description: "Mi primer sitio profesional con React, Vite y despliegue automático con GitHub Actions.",
       tags: ["React", "Vite", "CSS3"],
-      link: "https://github.com"
+      link: "https://github.com/mmoreno-byte"
     },
     {
       id: 2,
