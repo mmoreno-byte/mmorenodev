@@ -1,3 +1,4 @@
+import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
@@ -8,11 +9,12 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div style={{ backgroundColor: '#1a1a1a', color: 'white', minHeight: '100vh' }}>
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Navbar />
+      <div id="hero"><Hero /></div>
+      <div id="about"><About /></div>
+      <div id="skills"><Skills /></div>
+      <div id="projects"><Projects /></div>
+      <div id="contact"><Contact /></div>
       <Footer />
     </div>
   )
