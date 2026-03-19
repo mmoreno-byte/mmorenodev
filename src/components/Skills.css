@@ -3,8 +3,8 @@
   max-width: 680px;
   margin: 0 auto;
   text-align: center;
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
