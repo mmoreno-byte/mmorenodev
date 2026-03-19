@@ -1,5 +1,5 @@
 .about-container {
-  padding: 80px 20px;
+  padding: 100px 20px;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
@@ -15,29 +15,28 @@
 
 .about-title {
   font-size: 2.5rem;
-  color: #646cff;
-  margin-bottom: 20px;
+  color: #00ff41;
+  margin-bottom: 8px;
+  text-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
 }
 
 .about-content {
-  font-size: 1.2rem;
-  color: #ccc;
-  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #999;
+  line-height: 1.9;
 }
 
-.about-content p {
-  margin-bottom: 20px;
-}
+.about-content p { margin-bottom: 20px; }
+
+.about-content strong { color: #e0e0e0; font-weight: 600; }
 
 .about-quote {
   font-style: italic;
-  color: #888 !important;
-}
-
-body.light-mode .about-content {
-  color: #444;
-}
-
-body.light-mode .about-quote {
-  color: #888 !important;
+  color: #555 !important;
+  font-size: 1rem !important;
+  border-left: 2px solid #00ff4133;
+  padding-left: 16px;
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto !important;
 }

@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <span className="navbar-logo">mmoreno-byte</span>
+      <span className="navbar-logo">mmorenodev</span>
 
       <div className="navbar-right">
         <button className="navbar-burger" onClick={() => setMenuOpen(!menuOpen)}>

@@ -1,10 +1,14 @@
 .hero-container {
   position: relative;
   overflow: hidden;
-  padding: 120px 20px 80px;
+  padding: 140px 20px 100px;
   text-align: center;
-  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  background: #050505;
   color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-content {
@@ -13,46 +17,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 16px;
 }
 
-/* Animación base */
-.hero-avatar,
-.hero-title,
-.hero-subtitle,
-.hero-icons {
-  opacity: 0;
-  animation: fadeUp 0.7s ease forwards;
-}
-
-.hero-avatar     { animation-delay: 0.1s; }
-.hero-title      { animation-delay: 0.3s; }
-.hero-subtitle   { animation-delay: 0.5s; }
-.hero-icons      { animation-delay: 0.7s; }
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Estilos de cada elemento */
 .hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(74, 222, 128, 0.1);
-  border: 1px solid rgba(74, 222, 128, 0.3);
-  color: #4ade80;
-  padding: 6px 16px;
+  background: rgba(0, 255, 65, 0.08);
+  border: 1px solid rgba(0, 255, 65, 0.25);
+  color: #00ff41;
+  padding: 6px 18px;
   border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 500;
-  margin-bottom: 24px;
+  font-family: 'Share Tech Mono', monospace;
   opacity: 0;
   animation: fadeUp 0.7s ease forwards;
   animation-delay: 0s;
@@ -61,9 +40,10 @@
 .hero-badge-dot {
   width: 8px;
   height: 8px;
-  background: #4ade80;
+  background: #00ff41;
   border-radius: 50%;
   animation: pulse 1.5s infinite;
+  box-shadow: 0 0 6px #00ff41;
 }
 
 @keyframes pulse {
@@ -73,45 +53,81 @@
 
 .hero-avatar {
   border-radius: 50%;
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   object-position: center top;
-  border: 3px solid #646cff;
-  box-shadow: 0 0 20px rgba(100, 108, 255, 0.4);
+  border: 2px solid #00ff41;
+  box-shadow: 0 0 30px rgba(0, 255, 65, 0.3);
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+  animation-delay: 0.2s;
 }
 
 .hero-title {
-  font-size: 3.5rem;
-  margin: 20px 0 0;
-  letter-spacing: -1px;
+  font-size: 4rem;
+  margin: 0;
+  letter-spacing: -2px;
+  font-family: 'Share Tech Mono', monospace;
+  color: #fff;
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.hero-title .cursor {
+  display: inline-block;
+  width: 3px;
+  height: 0.9em;
+  background: #00ff41;
+  margin-left: 4px;
+  vertical-align: middle;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
-  color: #aaa;
-  max-width: 600px;
-  margin: 14px auto 0;
+  font-size: 1.1rem;
+  color: #777;
+  max-width: 550px;
+  margin: 0 auto;
+  line-height: 1.7;
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+  animation-delay: 0.6s;
 }
 
 .hero-icons {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+  animation-delay: 0.8s;
+}
+
+.hero-icons svg {
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.hero-icons svg:hover {
+  transform: translateY(-4px);
+  filter: drop-shadow(0 0 6px currentColor);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 @media (max-width: 480px) {
-  .hero-title {
-    font-size: 2.4rem;
-  }
-
-  .hero-icons {
-    gap: 16px;
-  }
-
-  .hero-icons svg {
-    font-size: 2rem !important;
-  }
+  .hero-title { font-size: 2.5rem; }
+  .hero-icons { gap: 14px; }
 }
