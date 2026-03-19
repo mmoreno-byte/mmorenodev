@@ -1,6 +1,7 @@
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGithub } from 'react-icons/fa';
 import { SiVite, SiJavascript } from 'react-icons/si';
 import fotoPerfil from '../assets/perfil.jpg';
+import MatrixBackground from './MatrixBackground';
 import './Hero.css';
 
 export default function Hero() {
@@ -8,6 +9,7 @@ export default function Hero() {
 
   return (
     <header className="hero-container">
+      <MatrixBackground />
       <div className="hero-content">
         <img
           src={fotoPerfil}
@@ -16,7 +18,7 @@ export default function Hero() {
         />
         <h1 className="hero-title">mmoreno-byte</h1>
         <p className="hero-subtitle">
-          Frontend Developer especializado en crear interfaces modernas y funcionales.
+          Frontend Developer especializada en crear interfaces modernas y funcionales.
         </p>
         <div className="hero-icons">
           <FaReact style={{ ...iconStyle, color: '#61dafb' }} title="React" />
