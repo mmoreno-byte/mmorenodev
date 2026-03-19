@@ -8,3 +8,6 @@
   pointer-events: none;
   z-index: 0;
 }
+body.light-mode .matrix-canvas {
+  display: none;
+}
