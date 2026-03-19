@@ -1,110 +1,102 @@
 .contact-container {
   padding: 100px 20px;
-  max-width: 600px;
+  max-width: 580px;
   margin: 0 auto;
   text-align: center;
 }
 
 .contact-title {
-  font-size: 2.5rem;
-  color: #00ff41;
+  font-size: 2.2rem;
+  color: #5eead4;
   margin-bottom: 8px;
-  text-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+  font-weight: 700;
 }
 
 .contact-subtitle {
-  color: #555;
-  margin-bottom: 50px;
-  font-size: 1rem;
+  color: #52525b;
+  margin-bottom: 48px;
+  font-size: 0.95rem;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
   text-align: left;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 7px;
 }
 
 .form-group label {
-  color: #666;
-  font-size: 0.85rem;
+  color: #52525b;
+  font-size: 0.82rem;
   font-weight: 500;
-  font-family: 'Share Tech Mono', monospace;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 .form-group input,
 .form-group textarea {
-  background: #0a0a0a;
-  border: 1px solid #1a1a1a;
+  background: #0c0c10;
+  border: 1px solid #18181f;
   border-radius: 8px;
-  padding: 12px 16px;
-  color: #e0e0e0;
-  font-size: 1rem;
+  padding: 11px 14px;
+  color: #d4d4d8;
+  font-size: 0.95rem;
   font-family: inherit;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition: border-color 0.3s;
   outline: none;
   resize: vertical;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #00ff4155;
-  box-shadow: 0 0 12px rgba(0, 255, 65, 0.08);
+  border-color: #5eead430;
 }
 
 .contact-btn {
-  background: rgba(0, 255, 65, 0.08);
-  color: #00ff41;
-  border: 1px solid #00ff4133;
+  background: rgba(94, 234, 212, 0.07);
+  color: #5eead4;
+  border: 1px solid #5eead425;
   border-radius: 8px;
-  padding: 14px;
-  font-size: 0.95rem;
+  padding: 13px;
+  font-size: 0.9rem;
   font-weight: 600;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: inherit;
   cursor: pointer;
   transition: all 0.3s;
-  margin-top: 10px;
-  letter-spacing: 1px;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
 }
 
 .contact-btn:hover:not(:disabled) {
-  background: rgba(0, 255, 65, 0.15);
-  box-shadow: 0 0 20px rgba(0, 255, 65, 0.1);
+  background: rgba(94, 234, 212, 0.12);
   transform: translateY(-2px);
 }
 
 .contact-btn:disabled {
-  opacity: 0.4;
+  opacity: 0.35;
   cursor: not-allowed;
 }
 
 .contact-feedback {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   padding: 10px;
   border-radius: 8px;
-  font-family: 'Share Tech Mono', monospace;
 }
 
 .contact-feedback.success {
-  color: #00ff41;
-  background: rgba(0, 255, 65, 0.05);
-  border: 1px solid rgba(0, 255, 65, 0.15);
+  color: #5eead4;
+  background: rgba(94, 234, 212, 0.05);
+  border: 1px solid rgba(94, 234, 212, 0.12);
 }
 
 .contact-feedback.error {
-  color: #ff4141;
-  background: rgba(255, 65, 65, 0.05);
-  border: 1px solid rgba(255, 65, 65, 0.15);
-}
-
-@media (max-width: 480px) {
-  .contact-title { font-size: 2rem; }
+  color: #f87171;
+  background: rgba(248, 113, 113, 0.05);
+  border: 1px solid rgba(248, 113, 113, 0.12);
 }

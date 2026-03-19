@@ -1,38 +1,38 @@
 .footer-container {
-  padding: 50px 20px;
-  background: #030303;
+  padding: 48px 20px;
+  background: #040406;
   text-align: center;
-  border-top: 1px solid #00ff4115;
+  border-top: 1px solid #5eead410;
 }
 
 .footer-name {
-  font-family: 'Share Tech Mono', monospace;
-  color: #00ff41;
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  opacity: 0.8;
+  font-weight: 600;
+  color: #5eead4;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
 }
 
 .footer-socials {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 20px;
+  gap: 24px;
+  margin-bottom: 18px;
 }
 
 .footer-socials a {
-  font-size: 1.8rem;
-  color: #555;
+  font-size: 1.5rem;
+  color: #3f3f46;
   transition: all 0.3s;
 }
 
 .footer-socials a:hover {
-  color: #00ff41;
-  transform: translateY(-3px);
-  filter: drop-shadow(0 0 6px #00ff41);
+  color: #5eead4;
+  transform: translateY(-2px);
 }
 
 .footer-copy {
-  color: #333;
-  font-size: 0.85rem;
+  color: #27272a;
+  font-size: 0.8rem;
 }

@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --green: #00ff41;
-  --green-dim: #00cc33;
-  --green-glow: rgba(0, 255, 65, 0.15);
-  --bg: #050505;
-  --bg-card: #0d0d0d;
-  --bg-section: #080808;
-  --border: #1a1a1a;
-  --text: #e0e0e0;
-  --text-muted: #666;
-  --accent: #646cff;
+  --green: #5eead4;       /* cian-verde apagado, sofisticado */
+  --green-dim: #4fd1c5;
+  --green-glow: rgba(94, 234, 212, 0.1);
+  --bg: #060608;
+  --bg-card: #0c0c10;
+  --border: #18181f;
+  --text: #d4d4d8;
+  --text-muted: #52525b;
 
   font-family: 'Inter', system-ui, sans-serif;
   line-height: 1.6;
@@ -50,27 +48,29 @@ h1, h2, h3 {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  padding: 30px 40px;
+  padding: 30px 60px;
 }
 
 .divider::before,
 .divider::after {
   content: '';
   flex: 1;
-  max-width: 300px;
+  max-width: 280px;
   height: 1px;
-  background: linear-gradient(to right, transparent, #00ff4155);
+  background: linear-gradient(to right, transparent, #5eead433);
 }
 
 .divider::after {
-  background: linear-gradient(to left, transparent, #00ff4155);
+  background: linear-gradient(to left, transparent, #5eead433);
 }
 
 .divider span {
-  color: #00ff41;
-  font-size: 1rem;
-  opacity: 0.5;
-  font-family: 'Share Tech Mono', monospace;
+  color: #5eead4;
+  font-size: 0.75rem;
+  opacity: 0.35;
+  letter-spacing: 2px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
 }
 
 button {

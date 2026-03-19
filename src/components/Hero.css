@@ -3,7 +3,7 @@
   overflow: hidden;
   padding: 140px 20px 100px;
   text-align: center;
-  background: #050505;
+  background: #060608;
   color: white;
   min-height: 100vh;
   display: flex;
@@ -24,26 +24,25 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(0, 255, 65, 0.08);
-  border: 1px solid rgba(0, 255, 65, 0.25);
-  color: #00ff41;
+  background: rgba(94, 234, 212, 0.06);
+  border: 1px solid rgba(94, 234, 212, 0.18);
+  color: #5eead4;
   padding: 6px 18px;
   border-radius: 999px;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 500;
-  font-family: 'Share Tech Mono', monospace;
+  letter-spacing: 0.3px;
   opacity: 0;
   animation: fadeUp 0.7s ease forwards;
   animation-delay: 0s;
 }
 
 .hero-badge-dot {
-  width: 8px;
-  height: 8px;
-  background: #00ff41;
+  width: 7px;
+  height: 7px;
+  background: #5eead4;
   border-radius: 50%;
-  animation: pulse 1.5s infinite;
-  box-shadow: 0 0 6px #00ff41;
+  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
@@ -53,23 +52,22 @@
 
 .hero-avatar {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 148px;
+  height: 148px;
   object-fit: cover;
   object-position: center top;
-  border: 2px solid #00ff41;
-  box-shadow: 0 0 30px rgba(0, 255, 65, 0.3);
+  border: 2px solid #5eead433;
+  box-shadow: 0 0 40px rgba(94, 234, 212, 0.12);
   opacity: 0;
   animation: fadeUp 0.7s ease forwards;
   animation-delay: 0.2s;
 }
 
 .hero-title {
-  font-size: 4rem;
-  margin: 0;
+  font-size: 3.8rem;
+  font-weight: 700;
   letter-spacing: -2px;
-  font-family: 'Share Tech Mono', monospace;
-  color: #fff;
+  color: #f4f4f5;
   opacity: 0;
   animation: fadeUp 0.7s ease forwards;
   animation-delay: 0.4s;
@@ -77,25 +75,26 @@
 
 .hero-title .cursor {
   display: inline-block;
-  width: 3px;
-  height: 0.9em;
-  background: #00ff41;
-  margin-left: 4px;
+  width: 2px;
+  height: 0.85em;
+  background: #5eead4;
+  margin-left: 3px;
   vertical-align: middle;
   animation: blink 1s infinite;
+  opacity: 0.7;
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
+  0%, 100% { opacity: 0.7; }
   50% { opacity: 0; }
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
-  color: #777;
-  max-width: 550px;
-  margin: 0 auto;
+  font-size: 1.05rem;
+  color: #52525b;
+  max-width: 520px;
   line-height: 1.7;
+  font-weight: 400;
   opacity: 0;
   animation: fadeUp 0.7s ease forwards;
   animation-delay: 0.6s;
@@ -106,7 +105,7 @@
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 8px;
   opacity: 0;
   animation: fadeUp 0.7s ease forwards;
   animation-delay: 0.8s;
@@ -115,19 +114,21 @@
 .hero-icons svg {
   transition: transform 0.3s, filter 0.3s;
   cursor: pointer;
+  opacity: 0.75;
 }
 
 .hero-icons svg:hover {
-  transform: translateY(-4px);
-  filter: drop-shadow(0 0 6px currentColor);
+  transform: translateY(-3px);
+  opacity: 1;
+  filter: drop-shadow(0 0 5px currentColor);
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
+  from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
 @media (max-width: 480px) {
-  .hero-title { font-size: 2.5rem; }
+  .hero-title { font-size: 2.6rem; }
   .hero-icons { gap: 14px; }
 }

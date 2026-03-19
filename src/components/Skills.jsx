@@ -9,7 +9,7 @@ const skills = [
   { name: 'JavaScript',  icon: <FaJs />,       color: '#f7df1e', level: 70 },
   { name: 'React',       icon: <FaReact />,    color: '#61dafb', level: 60 },
   { name: 'Vite',        icon: <SiVite />,     color: '#646cff', level: 60 },
-  { name: 'Git/GitHub',  icon: <FaGithub />,   color: '#ffffff', level: 65 },
+  { name: 'Git/GitHub',  icon: <FaGithub />,   color: '#aaaaaa', level: 65 },
 ];
 
 export default function Skills() {
@@ -19,7 +19,7 @@ export default function Skills() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) setVisible(true); },
-      { threshold: 0.3 }
+      { threshold: 0.2 }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
