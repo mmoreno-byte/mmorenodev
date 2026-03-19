@@ -1,11 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaGithub } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaGithub, FaReact } from 'react-icons/fa';
+import { SiVite } from 'react-icons/si';
 import './Skills.css';
 
 const skills = [
   { name: 'HTML5',       icon: <FaHtml5 />,   color: '#e34f26', level: 85 },
   { name: 'CSS3',        icon: <FaCss3Alt />,  color: '#1572b6', level: 80 },
   { name: 'JavaScript',  icon: <FaJs />,       color: '#f7df1e', level: 70 },
+  { name: 'React',       icon: <FaReact />,    color: '#61dafb', level: 60 },
+  { name: 'Vite',        icon: <SiVite />,     color: '#646cff', level: 60 },
   { name: 'Git/GitHub',  icon: <FaGithub />,   color: '#ffffff', level: 65 },
 ];
 
