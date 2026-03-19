@@ -11,6 +11,10 @@ export default function Hero() {
     <header className="hero-container">
       <MatrixBackground />
       <div className="hero-content">
+        <div className="hero-badge">
+          <span className="hero-badge-dot" />
+          Disponible para trabajar
+        </div>
         <img
           src={fotoPerfil}
           alt="Foto de perfil"
