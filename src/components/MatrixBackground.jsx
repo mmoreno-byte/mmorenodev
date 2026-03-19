@@ -11,23 +11,30 @@ export default function MatrixBackground() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const fontSize = 14;
+    const fontSize = 13;
     const columns = Math.floor(canvas.width / fontSize);
     const drops = Array(columns).fill(1);
 
-    const chars = 'アイウエオカキクケコサシスセソタチツテトナニヌネノ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ</>{}[]#@';
+    // Mezcla de caracteres técnicos y japoneses
+    const chars = '01アイウエオカキクケコ{}[]<>/\\|=+-*&^%$#@!abcdefghijklmnopqrstuvwxyz';
 
     function draw() {
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+      // Fondo con trail suave
+      ctx.fillStyle = 'rgba(6, 6, 8, 0.06)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-      ctx.fillStyle = '#0f0';
-      ctx.font = `${fontSize}px monospace`;
 
       drops.forEach((y, i) => {
         const char = chars[Math.floor(Math.random() * chars.length)];
         const x = i * fontSize;
-        ctx.fillStyle = y * fontSize < 50 ? '#7fff7f' : '#0f0';
+
+        // Cabeza de la columna más brillante
+        if (y * fontSize < fontSize * 2) {
+          ctx.fillStyle = '#a7f3d0'; // cian muy claro para la cabeza
+        } else {
+          ctx.fillStyle = '#2d9e7e'; // cian-verde apagado para el resto
+        }
+
+        ctx.font = `${fontSize}px monospace`;
         ctx.fillText(char, x, y * fontSize);
 
         if (y * fontSize > canvas.height && Math.random() > 0.975) {
@@ -37,7 +44,7 @@ export default function MatrixBackground() {
       });
     }
 
-    const interval = setInterval(draw, 50);
+    const interval = setInterval(draw, 55);
 
     const handleResize = () => {
       canvas.width = window.innerWidth;
