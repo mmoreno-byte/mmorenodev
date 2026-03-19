@@ -4,16 +4,22 @@ import './Contact.css';
 
 export default function Contact() {
   const formRef = useRef();
-  const [status, setStatus] = useState('idle'); // idle | sending | success | error
+  const [status, setStatus] = useState('idle');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus('sending');
 
-    emailjs.sendForm(
+    const formData = new FormData(formRef.current);
+
+    emailjs.send(
       'service_fu08m1h',
       'template_7n2cgm2',
-      formRef.current,
+      {
+        from_name:  formData.get('from_name'),
+        from_email: formData.get('from_email'),
+        message:    formData.get('message'),
+      },
       'w_5AEwrBKAQWUYpCA'
     )
     .then(() => {
