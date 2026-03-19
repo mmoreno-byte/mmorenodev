@@ -6,6 +6,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Divider from './components/Divider'
 
 function App() {
   return (
@@ -13,10 +14,15 @@ function App() {
       <Navbar />
       <ThemeToggle />
       <div id="hero"><Hero /></div>
+      <Divider />
       <div id="about"><About /></div>
+      <Divider />
       <div id="skills"><Skills /></div>
+      <Divider />
       <div id="projects"><Projects /></div>
+      <Divider />
       <div id="contact"><Contact /></div>
+      <Divider />
       <Footer />
     </div>
   )
