@@ -107,3 +107,27 @@
 @media (max-width: 768px) {
   .projects-grid { grid-template-columns: 1fr; }
 }
+
+.project-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+ 
+.project-link--secondary {
+  color: #888;
+  border-bottom-color: #444;
+}
+ 
+.project-link--secondary:hover {
+  color: #aaa;
+  border-bottom-color: #666;
+}
+ 
+.project-link--disabled {
+  color: #444;
+  border-bottom: 2px solid #2a2a2a;
+  cursor: default;
+  pointer-events: none;
+}

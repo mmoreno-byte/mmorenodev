@@ -8,14 +8,24 @@ const allProjects = [
     title: "Portfolio Developer Story",
     description: "Mi primer sitio profesional con React, Vite y despliegue automático con GitHub Actions.",
     tags: ["React", "Vite", "CSS3"],
-    link: "https://github.com/mmoreno-byte"
+    link: "https://mmoreno-byte.github.io/mmorenodev/",   // ← URL web publicada
+    repo: "https://github.com/mmoreno-byte/mmorenodev",   // ← repositorio
   },
   {
     id: 2,
+    title: "Portfolio Ana Moreno",
+    description: "Portfolio profesional para fotógrafa de conciertos y diseñadora gráfica.",
+    tags: ["React", "Vite", "CSS3"],
+    link: "https://mmoreno-byte.github.io/ana-moreno-portfolio/",   // ← ponla cuando esté publicada
+    repo: "https://github.com/mmoreno-byte/ana-moreno-portfolio",   // ← cuando esté subido
+  },
+  {
+    id: 3,
     title: "Próximo Proyecto...",
     description: "Un espacio reservado para mi siguiente gran desarrollo con Node.js o APIs externas.",
     tags: ["Node.js"],
-    link: "#"
+    link: "#",
+    repo: null,   // ← null = no muestra el botón de código
   }
 ];
 
@@ -57,7 +67,23 @@ export default function Projects() {
                 <span key={tag} className="tech-tag">{tag}</span>
               ))}
             </div>
-            <a href={p.link} target="_blank" className="project-link">Explorar Código →</a>
+
+            {/* Botones */}
+            <div className="project-actions">
+              {p.link && p.link !== '#' && (
+                <a href={p.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                  Ver web →
+                </a>
+              )}
+              {p.repo && (
+                <a href={p.repo} target="_blank" rel="noopener noreferrer" className="project-link project-link--secondary">
+                  Ver código →
+                </a>
+              )}
+              {p.link === '#' && (
+                <span className="project-link project-link--disabled">Próximamente...</span>
+              )}
+            </div>
           </div>
         )) : (
           <p className="no-results">No hay proyectos con esa tecnología aún. ¡Pronto! 🚀</p>
