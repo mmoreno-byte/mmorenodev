@@ -1,6 +1,9 @@
+import useInView from '../hooks/useInView';
 import './Projects.css';
 
 export default function Projects() {
+  const [ref, visible] = useInView(0.1);
+
   const projects = [
     {
       id: 1,
@@ -19,10 +22,10 @@ export default function Projects() {
   ];
 
   return (
-    <section className="projects-container">
+    <section ref={ref} className={`projects-container ${visible ? 'visible' : ''}`}>
       <h2 style={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: '10px' }}>Mis Proyectos</h2>
       <p style={{ textAlign: 'center', color: '#666' }}>Una selección de mis trabajos más recientes</p>
-      
+
       <div className="projects-grid">
         {projects.map((p) => (
           <div key={p.id} className="project-card">

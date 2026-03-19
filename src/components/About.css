@@ -1,0 +1,43 @@
+.about-container {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.about-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #646cff;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  font-size: 1.2rem;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+.about-quote {
+  font-style: italic;
+  color: #888 !important;
+}
+
+body.light-mode .about-content {
+  color: #444;
+}
+
+body.light-mode .about-quote {
+  color: #888 !important;
+}
