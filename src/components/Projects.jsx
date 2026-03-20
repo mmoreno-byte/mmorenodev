@@ -3,13 +3,12 @@ import useInView from '../hooks/useInView';
 import './Projects.css';
 
 const allProjects = [
-  {
+    {
     id: 1,
-    title: "Portfolio Developer Story",
-    description: "Mi primer sitio profesional con React, Vite y despliegue automático con GitHub Actions.",
-    tags: ["React", "Vite", "CSS3"],
-    link: "https://mmoreno-byte.github.io/mmorenodev/",   // ← URL web publicada
-    repo: "https://github.com/mmoreno-byte/mmorenodev",   // ← repositorio
+    title: "DoFocus",
+    description: "Aplicación web de gestión de tareas con gamificación, temporizador Pomodoro y modo oscuro. Desarrollada con PHP, MySQL, HTML, CSS y JavaScript.",
+    tags: ["PHP", "MySQL", "JavaScript", "CSS3"],
+    link: "https://github.com/mmoreno-byte/dofocus"
   },
   {
     id: 2,
