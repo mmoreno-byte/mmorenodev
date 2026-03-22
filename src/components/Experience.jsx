@@ -38,7 +38,7 @@ const timeline = [
     type: 'formacion',
     title: 'Técnico Superior en Desarrollo de Aplicaciones Web',
     place: 'Formación Profesional · Granada',
-    date: '2023 — Mayo 2025',
+    date: '2024 — Mayo 2026',
     description: 'Formación completa en desarrollo web frontend y backend. Proyectos reales con React, Spring Boot, PHP, MySQL y despliegue en producción con GitHub Actions y Railway.',
     tags: ['React', 'Spring Boot', 'PHP', 'MySQL', 'Java', 'JavaScript', 'GitHub Actions']
   }
