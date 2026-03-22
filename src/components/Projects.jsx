@@ -3,30 +3,41 @@ import useInView from '../hooks/useInView';
 import './Projects.css';
 
 const allProjects = [
-    {
+  {
     id: 1,
     title: "DoFocus",
     description: "Aplicación web de gestión de tareas con gamificación, temporizador Pomodoro y modo oscuro. Desarrollada con PHP, MySQL, HTML, CSS y JavaScript.",
     tags: ["PHP", "MySQL", "JavaScript", "CSS3"],
-    link: "https://github.com/mmoreno-byte/dofocus"
+    link: "https://github.com/mmoreno-byte/dofocus",
+    repo: "https://github.com/mmoreno-byte/dofocus"
   },
   {
     id: 2,
     title: "Portfolio Ana Moreno",
-    description: "Portfolio profesional para fotógrafa de conciertos y diseñadora gráfica.",
+    description: "Portfolio profesional para fotógrafa de conciertos y diseñadora gráfica. Desarrollado con React y Vite.",
     tags: ["React", "Vite", "CSS3"],
-    link: "https://mmoreno-byte.github.io/ana-moreno-portfolio/",   // ← ponla cuando esté publicada
-    repo: "https://github.com/mmoreno-byte/ana-moreno-portfolio",   // ← cuando esté subido
+    link: "https://mmoreno-byte.github.io/ana-moreno-portfolio/",
+    repo: "https://github.com/mmoreno-byte/ana-moreno-portfolio",
   },
   {
     id: 3,
-    title: "Próximo Proyecto...",
-    description: "Un espacio reservado para mi siguiente gran desarrollo con Node.js o APIs externas.",
-    tags: ["Node.js"],
-    link: "#",
-    repo: null,   // ← null = no muestra el botón de código
+    title: "Videogames API",
+    description: "API REST completa de videojuegos con autenticación JWT, CRUD, filtros y documentación Swagger. Backend con Spring Boot desplegado en Railway.",
+    tags: ["Java", "Spring Boot", "JWT"],
+    link: "https://videogames-api-production-16b1.up.railway.app/swagger-ui.html",
+    repo: "https://github.com/mmoreno-byte/videogames-api",
+  },
+  {
+    id: 4,
+    title: "Videogames Frontend",
+    description: "Aplicación web para gestionar videojuegos conectada a la API REST. Login, registro, buscador y filtros. Desplegada en GitHub Pages.",
+    tags: ["React", "Vite", "CSS3", "Axios"],
+    link: "https://mmoreno-byte.github.io/videogames-frontend/",
+    repo: "https://github.com/mmoreno-byte/videogames-frontend",
   }
 ];
+
+const filters = ["Todos", "React", "Vite", "CSS3", "JavaScript", "Java", "Spring Boot", "PHP"];
 
 const filters = ["Todos", "React", "Vite", "CSS3", "Node.js", "JavaScript"];
 
