@@ -1,27 +1,31 @@
-# mmorenodev — Portfolio
+# 🧑‍💻 mmorenodev — Portfolio
 
-Portfolio personal desarrollado con React + Vite, desplegado en GitHub Pages.
+Portfolio personal desarrollado con React + Vite, desplegado en GitHub Pages con CI/CD automático.
 
-## 🚀 Ver en vivo
-[mmorenodev.github.io/mmorenodev](https://mmorenodev.github.io/mmorenodev/)
-
-## 🛠️ Tecnologías
-- React 19
-- Vite 7
-- CSS3
-- GitHub Actions (CI/CD)
+## 🌐 Ver en vivo
+[mmoreno-byte.github.io/mmorenodev](https://mmoreno-byte.github.io/mmorenodev/)
 
 ## ✨ Características
 - Efecto typewriter en el hero
 - Fondo Matrix animado
-- Diseño responsive
+- Sección de habilidades con barras animadas
+- Sección de experiencia y formación
+- Proyectos con filtros por tecnología
+- Diseño responsive y modo oscuro
+- Open Graph para preview en redes sociales
 - Despliegue automático con GitHub Actions
 
+## 🛠️ Tecnologías
+- React 19
+- Vite
+- CSS3
+- GitHub Actions (CI/CD)
+
 ## 📦 Instalación local
-```bash
+\`\`\`bash
 npm install
 npm run dev
-```
+\`\`\`
 
-## 👤 Autor
-mmoreno-byte — [GitHub](https://github.com/mmoreno-byte)
+## 👤 Autora
+mmorenodev— [GitHub](https://github.com/mmoreno-byte) · [Portfolio](https://mmoreno-byte.github.io/mmorenodev/)
