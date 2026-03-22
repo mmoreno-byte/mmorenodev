@@ -1,39 +1,46 @@
-import { useRef } from 'react';
-import useInView from '../hooks/useInView';
 import './Experience.css';
+import useInView from '../hooks/useInView';
 
 const timeline = [
   {
-    type: 'formacion',
-    title: 'Técnico Superior en DAW',
-    place: 'Formación Profesional',
-    date: '2023 — Actualidad',
-    description: 'Desarrollo de Aplicaciones Web. Formación en frontend, backend, bases de datos y despliegue de aplicaciones.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'Java']
+    type: 'experiencia',
+    title: 'Prácticas — Desarrollo de Aplicaciones Web',
+    place: 'ANDWEBSOL SL · En remoto',
+    date: 'Feb 2026 — Actualidad',
+    description: 'Gestión y optimización de contenidos web con Drupal. Desarrollo de scripts en Python para automatización de procesos. Diseño e implementación de APIs para comunicación entre servicios. Redacción de documentación técnica y funcional.',
+    tags: ['Python', 'Drupal', 'APIs', 'Automatización', 'Documentación']
   },
   {
     type: 'experiencia',
-    title: 'Prácticas de Desarrollo Web',
-    place: 'Empresa de prácticas',
-    date: '2025',
-    description: 'Desarrollo y mantenimiento de aplicaciones web. Trabajo en equipo con metodologías ágiles y control de versiones con Git.',
-    tags: ['React', 'Vite', 'Git', 'GitHub']
+    title: 'Analista de Ciberseguridad',
+    place: 'Ayuntamiento de Granada · Presencial',
+    date: 'Dic 2024 — Jun 2025',
+    description: 'Evaluación de vulnerabilidades en sistemas y redes municipales. Implementación de políticas y protocolos de seguridad informática. Análisis forense digital y respuesta ante incidentes. Formación interna en concienciación sobre ciberseguridad.',
+    tags: ['Ciberseguridad', 'Análisis forense', 'Redes', 'Seguridad informática']
   },
   {
-    type: 'proyecto',
-    title: 'Videogames API — Proyecto personal',
-    place: 'Proyecto propio',
-    date: '2025',
-    description: 'API REST completa con Spring Boot, autenticación JWT y base de datos PostgreSQL desplegada en Railway.',
-    tags: ['Java', 'Spring Boot', 'JWT', 'PostgreSQL']
+    type: 'experiencia',
+    title: 'Creadora de Páginas Web',
+    place: 'Ayuntamiento de Granada · Presencial',
+    date: 'Jun 2024 — Dic 2024',
+    description: 'Diseño y desarrollo de ZEO Granada, un Mapa de Empleabilidad con recursos para búsqueda de empleo. Desarrollo con HTML5, CSS3, JavaScript, PHP y Java, con base de datos MySQL. Priorización de accesibilidad, usabilidad y rendimiento.',
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'Java', 'MySQL']
   },
   {
-    type: 'proyecto',
-    title: 'Portfolio personal',
-    place: 'Proyecto propio',
-    date: '2025',
-    description: 'Portfolio profesional con React, Vite, efecto Matrix, animaciones y despliegue automático con GitHub Actions.',
-    tags: ['React', 'Vite', 'CSS3', 'GitHub Actions']
+    type: 'experiencia',
+    title: 'Agente del Cambio — Transformación Digital',
+    place: 'Escuela de Organización Industrial · Presencial',
+    date: 'Mar 2024 — Abr 2024',
+    description: 'Programa Generación Digital centrado en la digitalización de PYMEs. Formación en estrategias de innovación, marketing digital y adopción tecnológica. Diseño de estrategias de posicionamiento online y mejora de procesos internos.',
+    tags: ['Transformación digital', 'Marketing digital', 'Innovación', 'PYMEs']
+  },
+  {
+    type: 'formacion',
+    title: 'Técnico Superior en Desarrollo de Aplicaciones Web',
+    place: 'Formación Profesional · Granada',
+    date: '2023 — Mayo 2025',
+    description: 'Formación completa en desarrollo web frontend y backend. Proyectos reales con React, Spring Boot, PHP, MySQL y despliegue en producción con GitHub Actions y Railway.',
+    tags: ['React', 'Spring Boot', 'PHP', 'MySQL', 'Java', 'JavaScript', 'GitHub Actions']
   }
 ];
 
