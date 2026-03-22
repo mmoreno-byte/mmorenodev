@@ -39,8 +39,6 @@ const allProjects = [
 
 const filters = ["Todos", "React", "Vite", "CSS3", "JavaScript", "Java", "Spring Boot", "PHP"];
 
-const filters = ["Todos", "React", "Vite", "CSS3", "Node.js", "JavaScript"];
-
 export default function Projects() {
   const [ref, visible] = useInView(0.1);
   const [active, setActive] = useState("Todos");
