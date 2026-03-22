@@ -36,8 +36,8 @@ export default function Hero() {
         <h1 className="hero-title">
           {displayed}<span className="cursor" />
         </h1>
-        <p className="hero-subtitle">
-          Frontend Developer especializada en crear interfaces modernas y funcionales.
+       <p className="hero-subtitle">
+        Full Stack Developer en formación, apasionada por crear soluciones digitales completas.
         </p>
         <div className="hero-icons">
           <FaHtml5 style={{ ...iconStyle, color: '#e34f26' }} title="HTML5" />
