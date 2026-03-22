@@ -1,0 +1,22 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="630" fill="#0a0a0a"/>
+<g opacity="0.15" font-family="monospace" font-size="13" fill="#5eead4">
+  <text x="10" y="20">01001101</text><text x="10" y="50">11010010</text><text x="10" y="80">00110101</text><text x="10" y="110">10101100</text><text x="10" y="140">01100111</text><text x="10" y="170">11001010</text><text x="10" y="200">00111001</text><text x="10" y="230">10010110</text><text x="10" y="260">01101001</text><text x="10" y="290">11010100</text><text x="10" y="320">00101011</text><text x="10" y="350">10110010</text><text x="10" y="380">01011001</text><text x="10" y="410">11000101</text><text x="10" y="440">00010110</text><text x="10" y="470">10101001</text><text x="10" y="500">01110010</text><text x="10" y="530">11001101</text><text x="10" y="560">00101010</text><text x="10" y="590">10010011</text><text x="10" y="620">01100100</text>
+  <text x="1090" y="20">01001101</text><text x="1090" y="50">11010010</text><text x="1090" y="80">00110101</text><text x="1090" y="110">10101100</text><text x="1090" y="140">01100111</text><text x="1090" y="170">11001010</text><text x="1090" y="200">00111001</text><text x="1090" y="230">10010110</text><text x="1090" y="260">01101001</text><text x="1090" y="290">11010100</text><text x="1090" y="320">00101011</text><text x="1090" y="350">10110010</text><text x="1090" y="380">01011001</text><text x="1090" y="410">11000101</text><text x="1090" y="440">00010110</text><text x="1090" y="470">10101001</text><text x="1090" y="500">01110010</text><text x="1090" y="530">11001101</text><text x="1090" y="560">00101010</text><text x="1090" y="590">10010011</text><text x="1090" y="620">01100100</text>
+</g>
+<text font-family="system-ui, Arial, sans-serif" font-size="120" font-weight="900" fill="white" x="600" y="290" text-anchor="middle" letter-spacing="-3">mmorenodev</text>
+<rect x="350" y="315" width="500" height="3" fill="#5eead4" opacity="0.6"/>
+<text font-family="system-ui, Arial, sans-serif" font-size="34" font-weight="400" fill="#5eead4" x="600" y="380" text-anchor="middle" letter-spacing="4">FULL STACK DEVELOPER</text>
+<g font-family="system-ui, Arial, sans-serif" font-size="22" fill="#71717a">
+  <text x="255" y="460" text-anchor="middle">React</text>
+  <text x="420" y="460" text-anchor="middle">Spring Boot</text>
+  <text x="600" y="460" text-anchor="middle">JavaScript</text>
+  <text x="775" y="460" text-anchor="middle">Java</text>
+  <text x="935" y="460" text-anchor="middle">MySQL</text>
+</g>
+<circle cx="338" cy="453" r="4" fill="#5eead4" opacity="0.5"/>
+<circle cx="505" cy="453" r="4" fill="#5eead4" opacity="0.5"/>
+<circle cx="690" cy="453" r="4" fill="#5eead4" opacity="0.5"/>
+<circle cx="855" cy="453" r="4" fill="#5eead4" opacity="0.5"/>
+<text font-family="system-ui, Arial, sans-serif" font-size="20" fill="#3f3f46" x="600" y="560" text-anchor="middle">mmoreno-byte.github.io/mmorenodev</text>
+</svg>
