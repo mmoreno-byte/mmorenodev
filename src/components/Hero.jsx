@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGithub } from 'react-icons/fa';
-import { SiVite, SiJavascript } from 'react-icons/si';
+import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaPython } from 'react-icons/fa';
+import { SiVite, SiJavascript, SiSpringboot, SiMysql, SiPhp, SiOpenjdk } from 'react-icons/si';
 import fotoPerfil from '../assets/perfil.jpg';
 import MatrixBackground from './MatrixBackground';
 import './Hero.css';
@@ -40,13 +40,17 @@ export default function Hero() {
           Frontend Developer especializada en crear interfaces modernas y funcionales.
         </p>
         <div className="hero-icons">
-          <FaReact style={{ ...iconStyle, color: '#61dafb' }} title="React" />
-          <SiVite style={{ ...iconStyle, color: '#646cff' }} title="Vite" />
-          <SiJavascript style={{ ...iconStyle, color: '#f7df1e' }} title="JavaScript" />
-          <FaNodeJs style={{ ...iconStyle, color: '#339933' }} title="Node.js" />
           <FaHtml5 style={{ ...iconStyle, color: '#e34f26' }} title="HTML5" />
           <FaCss3Alt style={{ ...iconStyle, color: '#1572b6' }} title="CSS3" />
+          <SiJavascript style={{ ...iconStyle, color: '#f7df1e' }} title="JavaScript" />
+          <FaReact style={{ ...iconStyle, color: '#61dafb' }} title="React" />
+          <SiVite style={{ ...iconStyle, color: '#646cff' }} title="Vite" />
           <FaGithub style={{ ...iconStyle, color: '#aaa' }} title="GitHub" />
+          <SiPhp style={{ ...iconStyle, color: '#8892be' }} title="PHP" />
+          <SiOpenjdk style={{ ...iconStyle, color: '#f89820' }} title="Java" />
+          <SiMysql style={{ ...iconStyle, color: '#4479a1' }} title="MySQL" />
+          <SiSpringboot style={{ ...iconStyle, color: '#6db33f' }} title="Spring Boot" />
+          <FaPython style={{ ...iconStyle, color: '#3776ab' }} title="Python" />
         </div>
       </div>
     </header>
