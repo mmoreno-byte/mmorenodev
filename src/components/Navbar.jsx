@@ -4,6 +4,7 @@ import './Navbar.css';
 const links = [
   { label: 'Inicio',      href: '#hero' },
   { label: 'Sobre mí',    href: '#about' },
+  { label: 'Experiencia', href: '#experience' },
   { label: 'Habilidades', href: '#skills' },
   { label: 'Proyectos',   href: '#projects' },
   { label: 'Contacto',    href: '#contact' },
