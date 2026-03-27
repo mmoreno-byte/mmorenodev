@@ -45,7 +45,7 @@ const allProjects = [
 }
 ];
 
-const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3", "Python" "IA"];
+const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3", "Python", "IA"];
 
 export default function Projects() {
   const [ref, visible] = useInView(0.1);
