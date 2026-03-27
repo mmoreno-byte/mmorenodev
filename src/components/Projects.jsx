@@ -34,10 +34,18 @@ const allProjects = [
     tags: ["React", "Vite", "CSS3", "Axios"],
     link: "https://mmoreno-byte.github.io/videogames-frontend/",
     repo: "https://github.com/mmoreno-byte/videogames-frontend",
-  }
+  },
+  {
+  id: 5,
+  title: "Claude Chat",
+  description: "Chat con IA usando Llama 3.3 a través de Groq API. Backend con Python y Flask, frontend con React. Historial de conversaciones, renderizado Markdown y diseño tipo ChatGPT.",
+  tags: ["React", "Python", "Flask", "IA"],
+  link: "https://github.com/mmoreno-byte/claude-chat",
+  repo: "https://github.com/mmoreno-byte/claude-chat",
+}
 ];
 
-const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3"];
+const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3", "Python" "IA"];
 
 export default function Projects() {
   const [ref, visible] = useInView(0.1);
