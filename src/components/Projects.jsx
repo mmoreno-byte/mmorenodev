@@ -42,10 +42,18 @@ const allProjects = [
   tags: ["React", "Python", "Flask", "IA"],
   link: "https://github.com/mmoreno-byte/claude-chat",
   repo: "https://github.com/mmoreno-byte/claude-chat",
-}
+  },
+  {
+    id: 6,
+    title: "Data Dashboard",
+    description: "Aplicacion web de analisis de datos. Sube CSV o Excel y visualiza estadisticas descriptivas y graficos interactivos (barras, lineas, tarta) con React y FastAPI.",
+    tags: ["React", "Python", "FastAPI", "Pandas"],
+    link: "https://github.com/mmoreno-byte/data-dashboard",
+    repo: "https://github.com/mmoreno-byte/data-dashboard",
+  }
 ];
 
-const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3", "Python", "IA"];
+const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3", "Python", "FastAPI", "IA"];
 
 export default function Projects() {
   const [ref, visible] = useInView(0.1);
