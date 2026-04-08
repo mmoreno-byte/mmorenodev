@@ -50,10 +50,18 @@ const allProjects = [
     tags: ["React", "Python", "FastAPI", "Pandas"],
     link: "https://github.com/mmoreno-byte/data-dashboard",
     repo: "https://github.com/mmoreno-byte/data-dashboard",
+  },
+  {
+    id: 7,
+    title: "Job Board",
+    description: "Aplicación web para buscar ofertas de trabajo en informática usando la API de Jooble. Filtros por ubicación, tipo de contrato y tecnología. Backend FastAPI con datos reales o mock.",
+    tags: ["JavaScript", "Python", "FastAPI", "HTML", "CSS3"],
+    link: "https://github.com/mmoreno-byte/job-board",
+    repo: "https://github.com/mmoreno-byte/job-board",
   }
 ];
 
-const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3", "Python", "FastAPI", "IA"];
+const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3", "Python", "FastAPI", "IA", "HTML"];
 
 export default function Projects() {
   const [ref, visible] = useInView(0.1);
