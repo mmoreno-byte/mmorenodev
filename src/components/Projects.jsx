@@ -63,13 +63,13 @@ const allProjects = [
     id: 8,
     title: "GitHub Analytics",
     description: "Analiza repositorios de GitHub para descubrir tendencias del mercado tech. Lenguajes más usados, repos más estrellados y análisis comparativo.",
-    tags: ["Python", "Flask", "JavaScript", "pandas"],
+    tags: ["Python", "Flask", "JavaScript"],
     link: "https://github.com/mmoreno-byte/github-analytics",
     repo: "https://github.com/mmoreno-byte/github-analytics",
   }
 ];
 
-const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3", "Python", "FastAPI", "Flask", "IA", "HTML", "pandas"];
+const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3", "Python", "FastAPI", "Flask", "IA", "HTML"];
 
 export default function Projects() {
   const [ref, visible] = useInView(0.1);
