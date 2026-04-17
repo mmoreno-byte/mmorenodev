@@ -66,7 +66,14 @@ const allProjects = [
     tags: ["Python", "Flask", "JavaScript"],
     link: "https://github.com/mmoreno-byte/github-analytics",
     repo: "https://github.com/mmoreno-byte/github-analytics",
-  }
+  },
+  {
+  id: 9,
+  title: "Dev Docs Site",
+  description: "Web de documentación técnica personal con proyectos, apuntes de prácticas profesionales y guías. Construida con VitePress y desplegada en Cloudflare.",
+  tags: ["VitePress", "Cloudflare", "Markdown"],
+  link: "https://mmoreno-docs.mdmorenoinfor.workers.dev/"
+},
 ];
 
 const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3", "Python", "FastAPI", "Flask", "IA", "HTML"];
