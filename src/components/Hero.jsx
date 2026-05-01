@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
 
         {/* Botón Descargar CV */}
-        <a href="/cv-loli-moreno.pdf" download className="hero-cv-btn">
+        <a href="/mmorenodev/cv-loli-moreno.pdf" download className="hero-cv-btn">
           <FaDownload /> Descargar CV
         </a>
       </div>
