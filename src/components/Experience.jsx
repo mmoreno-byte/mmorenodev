@@ -28,11 +28,11 @@ const timeline = [
   },
   {
     type: 'experiencia',
-    title: 'Agente del Cambio — Transformación Digital',
-    place: 'Escuela de Organización Industrial · Presencial',
-    date: 'Mar 2024 — Abr 2024',
-    description: 'Programa Generación Digital centrado en la digitalización de PYMEs. Formación en estrategias de innovación, marketing digital y adopción tecnológica. Diseño de estrategias de posicionamiento online y mejora de procesos internos.',
-    tags: ['Transformación digital', 'Marketing digital', 'Innovación', 'PYMEs']
+    title: 'Docencia (Marketing Digital)',
+    place: 'COTEME · Presencial',
+    date: 'Sept 2025 — Set 2025',
+    description: 'Docencia para la mejora del empleo dirigido al mundo del Marketing y Redes Sociales',
+    tags: ['Redes Sociales', 'Marketing digital', 'Innovación']
   },
   {
     type: 'formacion',
