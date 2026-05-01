@@ -53,6 +53,9 @@ export default function Hero() {
           <FaPython style={{ ...iconStyle, color: '#3776ab' }} title="Python" />
         </div>
       </div>
+      <a href="/cv-loli-moreno.pdf" download>
+          Descargar CV
+      </a>  
     </header>
   );
 }
