@@ -14,7 +14,7 @@ export default function About() {
         <p>
           ¡Hola! Soy <strong>Loli</strong>, desarrolladora web con formación en <strong>DAW</strong>.
           Llevo año y medio construyendo proyectos reales
-        </p>. 
+        </p>
         <p>
           Vengo del mundo de la educación, y esa experiencia me enseñó a explicar lo complejo de forma simple, 
           algo que aplico tanto al código como a la documentación técnica.
