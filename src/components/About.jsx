@@ -13,7 +13,7 @@ export default function About() {
       <div className="about-content">
         <p>
           ¡Hola! Soy <strong>Loli</strong>, desarrolladora web con formación en <strong>DAW</strong>.
-          Llevo año y medio construyendo proyectos reales
+          Llevo año y medio construyendo proyectos reales.
         </p>
         <p>
           Vengo del mundo de la educación, y esa experiencia me enseñó a explicar lo complejo de forma simple, 
