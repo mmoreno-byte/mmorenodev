@@ -37,7 +37,7 @@ export default function Hero() {
           {displayed}<span className="cursor" />
         </h1>
        <p className="hero-subtitle">
-        Full Stack Developer, con foco en ciberseguridad, automatización e IA
+        Full Stack Developer | Ciberseguridad
         </p>
         <div className="hero-icons">
           <FaHtml5 style={{ ...iconStyle, color: '#e34f26' }} title="HTML5" />
