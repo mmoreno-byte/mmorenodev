@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaPython } from 'react-icons/fa';
+import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaPython, FaDownload } from 'react-icons/fa';
 import { SiVite, SiJavascript, SiSpringboot, SiMysql, SiPhp, SiOpenjdk } from 'react-icons/si';
 import fotoPerfil from '../assets/perfil.jpg';
 import MatrixBackground from './MatrixBackground';
@@ -36,8 +36,8 @@ export default function Hero() {
         <h1 className="hero-title">
           {displayed}<span className="cursor" />
         </h1>
-       <p className="hero-subtitle">
-        Full Stack Developer | Ciberseguridad
+        <p className="hero-subtitle">
+          Full Stack Developer | Ciberseguridad
         </p>
         <div className="hero-icons">
           <FaHtml5 style={{ ...iconStyle, color: '#e34f26' }} title="HTML5" />
@@ -52,10 +52,12 @@ export default function Hero() {
           <SiSpringboot style={{ ...iconStyle, color: '#6db33f' }} title="Spring Boot" />
           <FaPython style={{ ...iconStyle, color: '#3776ab' }} title="Python" />
         </div>
+
+        {/* Botón Descargar CV */}
+        <a href="/cv-loli-moreno.pdf" download className="hero-cv-btn">
+          <FaDownload /> Descargar CV
+        </a>
       </div>
-      <a href="/cv-loli-moreno.pdf" download>
-          Descargar CV
-      </a>  
     </header>
   );
 }
