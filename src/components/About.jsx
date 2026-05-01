@@ -13,14 +13,16 @@ export default function About() {
       <div className="about-content">
         <p>
           ¡Hola! Soy <strong>Loli</strong>, desarrolladora web con formación en <strong>DAW</strong>.
-          Llevo año y medio construyendo proyectos. Vengo del mundo de la educación, y esa experiencia
-          me enseñó a explicar lo complejo de forma simple, algo que aplico tanto al código como a la
-          documentación técnica.
+          Llevo año y medio construyendo proyectos reales
+        </p>. 
+        <p>
+          Vengo del mundo de la educación, y esa experiencia me enseñó a explicar lo complejo de forma simple, 
+          algo que aplico tanto al código como a la documentación técnica.
         </p>
         <p>
           Me especializo en desarrollo Full Stack y estoy dando el salto hacia los <strong>LLMs</strong>,
-          porque creo que el futuro del desarrollo pasa por entender
-          y construir con inteligencia artificial.
+          porque creo que las aplicaciones más útiles van a ser las que integren IA de forma práctica,
+          no decorativa.
         </p>
       </div>
     </section>
