@@ -13,7 +13,7 @@ export default function Footer() {
           <FaLinkedin />
         </a>
       </div>
-      <p className="footer-copy">© 2026 · Diseñado con ❤️ en Granada</p>
+      <p className="footer-copy">© 2026 · Diseñado por mmorenodev</p>
     </footer>
   );
 }
