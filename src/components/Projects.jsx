@@ -19,7 +19,7 @@ const allProjects = [
     tags: ["React", "Vite", "CSS3"],
     link: "https://mmoreno-byte.github.io/ana-moreno-portfolio/",
     repo: "https://github.com/mmoreno-byte/ana-moreno-portfolio",
-    image: null
+    image: "/mmorenodev/images/anamoreno.png"
   },
   {
     id: 3,
