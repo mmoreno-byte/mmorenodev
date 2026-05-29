@@ -1,4 +1,4 @@
-import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaPython, FaDownload } from 'react-icons/fa';
+import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaPython, FaDownload, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 import { SiVite, SiJavascript, SiSpringboot, SiMysql, SiPhp, SiOpenjdk } from 'react-icons/si';
 import fotoPerfil from '../assets/perfil.jpg';
 import useTypewriter from '../hooks/useTypewriter';
@@ -42,6 +42,19 @@ export default function Hero() {
         <a href="/mmorenodev/cv-loli-moreno.pdf" download className="hero-cv-btn">
           <FaDownload /> Descargar CV
         </a>
+
+        {/* Redes Sociales */}
+        <div className="hero-socials">
+          <a href="https://github.com/mmoreno-byte" target="_blank" rel="noopener noreferrer" title="GitHub" className="social-link">
+            <FaGithub />
+          </a>
+          <a href="https://linkedin.com/in/maria-moreno-dev" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="social-link">
+            <FaLinkedin />
+          </a>
+          <a href="https://twitter.com/mmoreno_dev" target="_blank" rel="noopener noreferrer" title="Twitter" className="social-link">
+            <FaXTwitter />
+          </a>
+        </div>
       </div>
     </header>
   );

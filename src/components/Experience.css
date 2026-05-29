@@ -45,6 +45,15 @@
 .timeline-item {
   position: relative;
   margin-bottom: 50px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition-delay: var(--delay, 0s);
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .timeline-dot {
@@ -63,11 +72,13 @@
   border: 1px solid #27272a;
   border-radius: 16px;
   padding: 24px;
-  transition: border-color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .timeline-content:hover {
-  border-color: #3f3f46;
+  border-color: #5eead420;
+  box-shadow: 0 8px 24px rgba(94, 234, 212, 0.08);
+  transform: translateY(-2px);
 }
 
 .timeline-header {

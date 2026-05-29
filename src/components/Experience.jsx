@@ -62,7 +62,7 @@ export default function Experience() {
         {timeline.map((item, index) => {
           const config = typeConfig[item.type];
           return (
-            <div key={index} className="timeline-item">
+            <div key={index} className={`timeline-item ${visible ? 'visible' : ''}`} style={{ '--delay': `${index * 0.1}s` }}>
               <div className="timeline-dot" style={{ borderColor: config.color }} />
               <div className="timeline-content">
                 <div className="timeline-header">
