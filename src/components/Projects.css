@@ -45,10 +45,10 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   margin-top: 36px;
-  align-items: stretch;
+  grid-auto-rows: 1fr;
 }
 
 .project-card {
@@ -61,7 +61,6 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 500px;
 }
 
 .project-image-wrapper {
