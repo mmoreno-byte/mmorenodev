@@ -5,7 +5,7 @@ const timeline = [
   {
     type: 'experiencia',
     title: 'Desarrollo de Aplicaciones Web',
-    place: 'Prácticas Profesionales',
+    place: 'ANDWEBSOL SL · En remoto',
     date: 'Feb 2026 — May 2026',
     description: 'Gestión y optimización de contenidos web con Drupal. Desarrollo de scripts en Python para automatización de procesos. Diseño e implementación de APIs para comunicación entre servicios. Redacción de documentación técnica y funcional.',
     tags: ['Python', 'Drupal', 'APIs', 'Automatización', 'Documentación']
