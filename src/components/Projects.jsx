@@ -30,9 +30,9 @@ const allProjects = [
   {
     id: 4,
     title: "Videogames Frontend",
-    description: "Aplicación web para gestionar videojuegos conectada a la API REST. Login, registro, buscador y filtros. Desplegada en GitHub Pages.",
+    description: "Aplicación web para gestionar videojuegos conectada a la API REST. Login, registro, buscador y filtros. Ejecutar localmente con la API.",
     tags: ["React", "Vite", "CSS3", "Axios"],
-    link: "https://mmoreno-byte.github.io/videogames-frontend/",
+    link: "#",
     repo: "https://github.com/mmoreno-byte/videogames-frontend",
   },
   {
