@@ -22,9 +22,9 @@ const allProjects = [
   {
     id: 3,
     title: "Videogames API",
-    description: "API REST completa de videojuegos con autenticación JWT, CRUD, filtros y documentación Swagger. Backend con Spring Boot desplegado en Railway.",
+    description: "API REST completa de videojuegos con autenticación JWT, CRUD, filtros y documentación Swagger. Backend con Spring Boot para ejecutar localmente.",
     tags: ["Java", "Spring Boot", "JWT"],
-    link: "https://videogames-api-production-16b1.up.railway.app/swagger-ui.html",
+    link: "#",
     repo: "https://github.com/mmoreno-byte/videogames-api",
   },
   {
