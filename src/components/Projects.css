@@ -52,11 +52,45 @@
 
 .project-card {
   background: #0c0c10;
-  padding: 28px;
+  padding: 0;
   border-radius: 12px;
   border: 1px solid #18181f;
   transition: all 0.3s ease;
   cursor: default;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a1f 0%, #0c0c10 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-card > h3,
+.project-card > p,
+.project-card > div:not(.project-image-wrapper) {
+  padding: 0 28px;
+}
+
+.project-card > h3:first-of-type {
+  padding-top: 28px;
 }
 
 .project-card:hover {
@@ -113,6 +147,7 @@
   gap: 16px;
   margin-top: 20px;
   flex-wrap: wrap;
+  padding: 0 28px 28px 28px;
 }
  
 .project-link--secondary {

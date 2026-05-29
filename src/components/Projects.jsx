@@ -9,7 +9,8 @@ const allProjects = [
     description: "Aplicación web de gestión de tareas con gamificación, temporizador Pomodoro y modo oscuro. Desarrollada con PHP, MySQL, HTML, CSS y JavaScript.",
     tags: ["PHP", "MySQL", "JavaScript", "CSS3"],
     link: "#",
-    repo: "https://github.com/mmoreno-byte/dofocus"
+    repo: "https://github.com/mmoreno-byte/dofocus",
+    image: null
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const allProjects = [
     tags: ["React", "Vite", "CSS3"],
     link: "https://mmoreno-byte.github.io/ana-moreno-portfolio/",
     repo: "https://github.com/mmoreno-byte/ana-moreno-portfolio",
+    image: null
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ const allProjects = [
     tags: ["Java", "Spring Boot", "JWT"],
     link: "#",
     repo: "https://github.com/mmoreno-byte/videogames-api",
+    image: null
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const allProjects = [
     tags: ["React", "Vite", "CSS3", "Axios"],
     link: "#",
     repo: "https://github.com/mmoreno-byte/videogames-frontend",
+    image: null
   },
   {
     id: 5,
@@ -42,6 +46,7 @@ const allProjects = [
     tags: ["React", "Python", "Flask", "IA"],
     link: "#",
     repo: "https://github.com/mmoreno-byte/claude-chat",
+    image: null
   },
   {
     id: 6,
@@ -50,13 +55,15 @@ const allProjects = [
     tags: ["React", "Python", "FastAPI", "Pandas"],
     link: "#",
     repo: "https://github.com/mmoreno-byte/data-dashboard",
+    image: null
   },
   {
     id: 7,
     title: "Dev Docs Site",
     description: "Web de documentación técnica personal con proyectos, apuntes de prácticas profesionales y guías. Construida con VitePress y desplegada en Cloudflare.",
     tags: ["VitePress", "Cloudflare", "Markdown"],
-    link: "https://mmoreno-docs.mdmorenoinfor.workers.dev/"
+    link: "https://mmoreno-docs.mdmorenoinfor.workers.dev/",
+    image: null
   },
 ];
 
@@ -91,6 +98,11 @@ export default function Projects() {
       <div className="projects-grid">
         {filtered.length > 0 ? filtered.map((p) => (
           <div key={p.id} className="project-card">
+            {p.image && (
+              <div className="project-image-wrapper">
+                <img src={p.image} alt={p.title} className="project-image" />
+              </div>
+            )}
             <h3>{p.title}</h3>
             <p style={{ color: '#aaa', lineHeight: '1.6' }}>{p.description}</p>
             <div style={{ marginTop: '15px' }}>
@@ -110,9 +122,6 @@ export default function Projects() {
                 <a href={p.repo} target="_blank" rel="noopener noreferrer" className="project-link project-link--secondary">
                   Ver código →
                 </a>
-              )}
-              {p.link === '#' && (
-                <span className="project-link project-link--disabled">Próximamente...</span>
               )}
             </div>
           </div>
