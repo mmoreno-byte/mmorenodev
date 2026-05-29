@@ -5,22 +5,6 @@ import './Projects.css';
 const allProjects = [
   {
     id: 1,
-    title: "DoFocus",
-    description: "Aplicación web de gestión de tareas con gamificación, temporizador Pomodoro y modo oscuro. Desarrollada con PHP, MySQL, HTML, CSS y JavaScript.",
-    tags: ["PHP", "MySQL", "JavaScript", "CSS3"],
-    link: "https://github.com/mmoreno-byte/dofocus",
-    repo: "https://github.com/mmoreno-byte/dofocus"
-  },
-  {
-    id: 2,
-    title: "Portfolio Ana Moreno",
-    description: "Portfolio profesional para fotógrafa de conciertos y diseñadora gráfica. Desarrollado con React y Vite.",
-    tags: ["React", "Vite", "CSS3"],
-    link: "https://mmoreno-byte.github.io/ana-moreno-portfolio/",
-    repo: "https://github.com/mmoreno-byte/ana-moreno-portfolio",
-  },
-  {
-    id: 3,
     title: "Videogames API",
     description: "API REST completa de videojuegos con autenticación JWT, CRUD, filtros y documentación Swagger. Backend con Spring Boot para ejecutar localmente.",
     tags: ["Java", "Spring Boot", "JWT"],
@@ -28,7 +12,7 @@ const allProjects = [
     repo: "https://github.com/mmoreno-byte/videogames-api",
   },
   {
-    id: 4,
+    id: 2,
     title: "Videogames Frontend",
     description: "Aplicación web para gestionar videojuegos conectada a la API REST. Login, registro, buscador y filtros. Desplegada en GitHub Pages.",
     tags: ["React", "Vite", "CSS3", "Axios"],
@@ -36,15 +20,15 @@ const allProjects = [
     repo: "https://github.com/mmoreno-byte/videogames-frontend",
   },
   {
-  id: 5,
-  title: "Claude Chat",
-  description: "Chat con IA usando Llama 3.3 a través de Groq API. Backend con Python y Flask, frontend con React. Historial de conversaciones, renderizado Markdown y diseño tipo ChatGPT.",
-  tags: ["React", "Python", "Flask", "IA"],
-  link: "https://github.com/mmoreno-byte/claude-chat",
-  repo: "https://github.com/mmoreno-byte/claude-chat",
+    id: 3,
+    title: "Claude Chat",
+    description: "Chat con IA usando Llama 3.3 a través de Groq API. Backend con Python y Flask, frontend con React. Historial de conversaciones, renderizado Markdown y diseño tipo ChatGPT.",
+    tags: ["React", "Python", "Flask", "IA"],
+    link: "https://github.com/mmoreno-byte/claude-chat",
+    repo: "https://github.com/mmoreno-byte/claude-chat",
   },
   {
-    id: 6,
+    id: 4,
     title: "Data Dashboard",
     description: "Aplicación web de análisis de datos. Sube CSV o Excel y visualiza estadísticas descriptivas y gráficos interactivos (barras, líneas, tarta) con React y FastAPI.",
     tags: ["React", "Python", "FastAPI", "Pandas"],
@@ -52,31 +36,16 @@ const allProjects = [
     repo: "https://github.com/mmoreno-byte/data-dashboard",
   },
   {
-    id: 7,
-    title: "Job Board",
-    description: "Aplicación web para buscar ofertas de trabajo en informática usando la API de Jooble. Filtros por ubicación, tipo de contrato y tecnología.",
-    tags: ["JavaScript", "Python", "HTML", "CSS3"],
-    link: "https://github.com/mmoreno-byte/job-board",
-    repo: "https://github.com/mmoreno-byte/job-board",
+    id: 5,
+    title: "DoFocus",
+    description: "Aplicación web de gestión de tareas con gamificación, temporizador Pomodoro y modo oscuro. Desarrollada con PHP, MySQL, HTML, CSS y JavaScript.",
+    tags: ["PHP", "MySQL", "JavaScript", "CSS3"],
+    link: "https://github.com/mmoreno-byte/dofocus",
+    repo: "https://github.com/mmoreno-byte/dofocus"
   },
-  {
-    id: 8,
-    title: "GitHub Analytics",
-    description: "Analiza repositorios de GitHub para descubrir tendencias del mercado tech. Lenguajes más usados, repos más estrellados y análisis comparativo.",
-    tags: ["Python", "Flask", "JavaScript"],
-    link: "https://github.com/mmoreno-byte/github-analytics",
-    repo: "https://github.com/mmoreno-byte/github-analytics",
-  },
-  {
-  id: 9,
-  title: "Dev Docs Site",
-  description: "Web de documentación técnica personal con proyectos, apuntes de prácticas profesionales y guías. Construida con VitePress y desplegada en Cloudflare.",
-  tags: ["VitePress", "Cloudflare", "Markdown"],
-  link: "https://mmoreno-docs.mdmorenoinfor.workers.dev/"
-},
 ];
 
-const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3", "Python", "FastAPI", "Flask", "IA", "HTML"];
+const filters = ["Todos", "React", "Java", "PHP", "Python", "JavaScript", "CSS3", "IA", "Spring Boot"];
 
 export default function Projects() {
   const [ref, visible] = useInView(0.1);
