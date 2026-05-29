@@ -1,28 +1,13 @@
-import { useEffect, useState } from 'react';
 import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaPython, FaDownload } from 'react-icons/fa';
 import { SiVite, SiJavascript, SiSpringboot, SiMysql, SiPhp, SiOpenjdk } from 'react-icons/si';
 import fotoPerfil from '../assets/perfil.jpg';
+import useTypewriter from '../hooks/useTypewriter';
 import MatrixBackground from './MatrixBackground';
 import './Hero.css';
 
-const FULL_TEXT = 'mmorenodev';
-
 export default function Hero() {
-  const [displayed, setDisplayed] = useState('');
+  const displayed = useTypewriter('mmorenodev', 80, 600);
   const iconStyle = { fontSize: '2.2rem', cursor: 'pointer' };
-
-  useEffect(() => {
-    let i = 0;
-    const timeout = setTimeout(() => {
-      const interval = setInterval(() => {
-        setDisplayed(FULL_TEXT.slice(0, i + 1));
-        i++;
-        if (i >= FULL_TEXT.length) clearInterval(interval);
-      }, 80);
-      return () => clearInterval(interval);
-    }, 600);
-    return () => clearTimeout(timeout);
-  }, []);
 
   return (
     <header className="hero-container">

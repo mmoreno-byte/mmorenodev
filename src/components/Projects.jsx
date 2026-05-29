@@ -46,7 +46,7 @@ const allProjects = [
   {
     id: 6,
     title: "Data Dashboard",
-    description: "Aplicacion web de analisis de datos. Sube CSV o Excel y visualiza estadisticas descriptivas y graficos interactivos (barras, lineas, tarta) con React y FastAPI.",
+    description: "Aplicación web de análisis de datos. Sube CSV o Excel y visualiza estadísticas descriptivas y gráficos interactivos (barras, líneas, tarta) con React y FastAPI.",
     tags: ["React", "Python", "FastAPI", "Pandas"],
     link: "https://github.com/mmoreno-byte/data-dashboard",
     repo: "https://github.com/mmoreno-byte/data-dashboard",

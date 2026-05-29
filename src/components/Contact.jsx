@@ -13,14 +13,14 @@ export default function Contact() {
     const formData = new FormData(formRef.current);
 
     emailjs.send(
-      'service_fu08m1h',
-      'template_7n2cgm2',
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       {
         from_name:  formData.get('from_name'),
         from_email: formData.get('from_email'),
         message:    formData.get('message'),
       },
-      'w_5AEwrBKAQWUYpCA'
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
     .then(() => {
       setStatus('success');
