@@ -10,7 +10,7 @@ const allProjects = [
     tags: ["PHP", "MySQL", "JavaScript", "CSS3"],
     link: "#",
     repo: "https://github.com/mmoreno-byte/dofocus",
-    image: null
+    images: null
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const allProjects = [
     tags: ["React", "Vite", "CSS3"],
     link: "https://mmoreno-byte.github.io/ana-moreno-portfolio/",
     repo: "https://github.com/mmoreno-byte/ana-moreno-portfolio",
-    image: "/mmorenodev/images/anamoreno.png"
+    images: ["/mmorenodev/images/anamoreno.png", "/mmorenodev/images/anamoreno2.png", "/mmorenodev/images/anamoreno3.png"]
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const allProjects = [
     tags: ["Java", "Spring Boot", "JWT"],
     link: "#",
     repo: "https://github.com/mmoreno-byte/videogames-api",
-    image: null
+    images: null
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const allProjects = [
     tags: ["React", "Vite", "CSS3", "Axios"],
     link: "#",
     repo: "https://github.com/mmoreno-byte/videogames-frontend",
-    image: null
+    images: null
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ const allProjects = [
     tags: ["React", "Python", "Flask", "IA"],
     link: "#",
     repo: "https://github.com/mmoreno-byte/claude-chat",
-    image: null
+    images: null
   },
   {
     id: 6,
@@ -55,7 +55,7 @@ const allProjects = [
     tags: ["React", "Python", "FastAPI", "Pandas"],
     link: "#",
     repo: "https://github.com/mmoreno-byte/data-dashboard",
-    image: null
+    images: null
   },
   {
     id: 7,
@@ -63,11 +63,75 @@ const allProjects = [
     description: "Web de documentación técnica personal con proyectos, apuntes de prácticas profesionales y guías. Construida con VitePress y desplegada en Cloudflare.",
     tags: ["VitePress", "Cloudflare", "Markdown"],
     link: "https://mmoreno-docs.mdmorenoinfor.workers.dev/",
-    image: null
+    images: null
   },
 ];
 
 const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3", "Python", "FastAPI", "Flask", "IA"];
+
+function ProjectCard({ p }) {
+  const [imageIndex, setImageIndex] = useState(0);
+  const hasImages = p.images && p.images.length > 0;
+  const currentImage = hasImages ? p.images[imageIndex] : null;
+
+  const nextImage = () => {
+    if (hasImages) setImageIndex((imageIndex + 1) % p.images.length);
+  };
+
+  const prevImage = () => {
+    if (hasImages) setImageIndex((imageIndex - 1 + p.images.length) % p.images.length);
+  };
+
+  return (
+    <div className="project-card">
+      {currentImage && (
+        <div className="project-image-wrapper">
+          <img src={currentImage} alt={p.title} className="project-image" />
+          {hasImages && p.images.length > 1 && (
+            <>
+              <button className="carousel-btn carousel-btn--prev" onClick={prevImage} aria-label="Imagen anterior">
+                ‹
+              </button>
+              <button className="carousel-btn carousel-btn--next" onClick={nextImage} aria-label="Siguiente imagen">
+                ›
+              </button>
+              <div className="carousel-dots">
+                {p.images.map((_, idx) => (
+                  <button
+                    key={idx}
+                    className={`dot ${idx === imageIndex ? 'active' : ''}`}
+                    onClick={() => setImageIndex(idx)}
+                    aria-label={`Ir a imagen ${idx + 1}`}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      )}
+      <h3>{p.title}</h3>
+      <p style={{ color: '#aaa', lineHeight: '1.6' }}>{p.description}</p>
+      <div style={{ marginTop: '15px' }}>
+        {p.tags.map(tag => (
+          <span key={tag} className="tech-tag">{tag}</span>
+        ))}
+      </div>
+
+      <div className="project-actions">
+        {p.link && p.link !== '#' && (
+          <a href={p.link} target="_blank" rel="noopener noreferrer" className="project-link">
+            Ver web →
+          </a>
+        )}
+        {p.repo && (
+          <a href={p.repo} target="_blank" rel="noopener noreferrer" className="project-link project-link--secondary">
+            Ver código →
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export default function Projects() {
   const [ref, visible] = useInView(0.1);
@@ -82,7 +146,6 @@ export default function Projects() {
       <h2 style={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: '10px' }}>Mis Proyectos</h2>
       <p style={{ textAlign: 'center', color: '#666' }}>Una selección de mis trabajos más recientes</p>
 
-      {/* Filtros */}
       <div className="projects-filters">
         {filters.map(filter => (
           <button
@@ -97,34 +160,7 @@ export default function Projects() {
 
       <div className="projects-grid">
         {filtered.length > 0 ? filtered.map((p) => (
-          <div key={p.id} className="project-card">
-            {p.image && (
-              <div className="project-image-wrapper">
-                <img src={p.image} alt={p.title} className="project-image" />
-              </div>
-            )}
-            <h3>{p.title}</h3>
-            <p style={{ color: '#aaa', lineHeight: '1.6' }}>{p.description}</p>
-            <div style={{ marginTop: '15px' }}>
-              {p.tags.map(tag => (
-                <span key={tag} className="tech-tag">{tag}</span>
-              ))}
-            </div>
-
-            {/* Botones */}
-            <div className="project-actions">
-              {p.link && p.link !== '#' && (
-                <a href={p.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                  Ver web →
-                </a>
-              )}
-              {p.repo && (
-                <a href={p.repo} target="_blank" rel="noopener noreferrer" className="project-link project-link--secondary">
-                  Ver código →
-                </a>
-              )}
-            </div>
-          </div>
+          <ProjectCard key={p.id} p={p} />
         )) : (
           <p className="no-results">No hay proyectos con esa tecnología aún. ¡Pronto! 🚀</p>
         )}
