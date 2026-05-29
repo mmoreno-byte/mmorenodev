@@ -8,7 +8,7 @@ const allProjects = [
     title: "DoFocus",
     description: "Aplicación web de gestión de tareas con gamificación, temporizador Pomodoro y modo oscuro. Desarrollada con PHP, MySQL, HTML, CSS y JavaScript.",
     tags: ["PHP", "MySQL", "JavaScript", "CSS3"],
-    link: "https://github.com/mmoreno-byte/dofocus",
+    link: "#",
     repo: "https://github.com/mmoreno-byte/dofocus"
   },
   {
@@ -40,7 +40,7 @@ const allProjects = [
     title: "Claude Chat",
     description: "Chat con IA usando Llama 3.3 a través de Groq API. Backend con Python y Flask, frontend con React. Historial de conversaciones, renderizado Markdown y diseño tipo ChatGPT.",
     tags: ["React", "Python", "Flask", "IA"],
-    link: "https://github.com/mmoreno-byte/claude-chat",
+    link: "#",
     repo: "https://github.com/mmoreno-byte/claude-chat",
   },
   {
@@ -48,7 +48,7 @@ const allProjects = [
     title: "Data Dashboard",
     description: "Aplicación web de análisis de datos. Sube CSV o Excel y visualiza estadísticas descriptivas y gráficos interactivos (barras, líneas, tarta) con React y FastAPI.",
     tags: ["React", "Python", "FastAPI", "Pandas"],
-    link: "https://github.com/mmoreno-byte/data-dashboard",
+    link: "#",
     repo: "https://github.com/mmoreno-byte/data-dashboard",
   },
   {
