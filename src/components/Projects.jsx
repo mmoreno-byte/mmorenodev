@@ -5,46 +5,22 @@ import './Projects.css';
 const allProjects = [
   {
     id: 1,
-    title: "DoFocus",
-    description: "Aplicación web de gestión de tareas con gamificación, temporizador Pomodoro y modo oscuro. Desarrollada con PHP, MySQL, HTML, CSS y JavaScript.",
-    tags: ["PHP", "MySQL", "JavaScript", "CSS3"],
+    title: "RAG Document Agent",
+    description: "Agente conversacional que permite subir PDFs y hacerles preguntas en cualquier idioma. RAG con LangChain, ChromaDB y Ollama, backend en FastAPI, historial en PostgreSQL, todo dockerizado.",
+    tags: ["FastAPI", "Docker", "PostgreSQL", "IA"],
     link: "#",
-    repo: "https://github.com/mmoreno-byte/dofocus"
+    repo: "https://github.com/mmoreno-byte/ai-portfolio-agent"
   },
   {
     id: 2,
-    title: "Portfolio Ana Moreno",
-    description: "Portfolio profesional para fotógrafa de conciertos y diseñadora gráfica. Desarrollado con React y Vite.",
-    tags: ["React", "Vite", "CSS3"],
-    link: "https://mmoreno-byte.github.io/ana-moreno-portfolio/",
-    repo: "https://github.com/mmoreno-byte/ana-moreno-portfolio"
-  },
-  {
-    id: 3,
-    title: "Videogames API",
-    description: "API REST completa de videojuegos con autenticación JWT, CRUD, filtros y documentación Swagger. Backend con Spring Boot para ejecutar localmente.",
-    tags: ["Java", "Spring Boot", "JWT"],
+    title: "Videogames API + Frontend",
+    description: "API REST completa de videojuegos con autenticación JWT, CRUD, filtros y documentación Swagger (Spring Boot), conectada a una aplicación web con login, registro y buscador (React).",
+    tags: ["Java", "Spring Boot", "JWT", "React"],
     link: "#",
     repo: "https://github.com/mmoreno-byte/videogames-api"
   },
   {
-    id: 4,
-    title: "Videogames Frontend",
-    description: "Aplicación web para gestionar videojuegos conectada a la API REST. Login, registro, buscador y filtros. Ejecutar localmente con la API.",
-    tags: ["React", "Vite", "CSS3", "Axios"],
-    link: "#",
-    repo: "https://github.com/mmoreno-byte/videogames-frontend"
-  },
-  {
-    id: 5,
-    title: "Claude Chat",
-    description: "Chat con IA usando Llama 3.3 a través de Groq API. Backend con Python y Flask, frontend con React. Historial de conversaciones, renderizado Markdown y diseño tipo ChatGPT.",
-    tags: ["React", "Python", "Flask", "IA"],
-    link: "#",
-    repo: "https://github.com/mmoreno-byte/claude-chat"
-  },
-  {
-    id: 6,
+    id: 3,
     title: "Data Dashboard",
     description: "Aplicación web de análisis de datos. Sube CSV o Excel y visualiza estadísticas descriptivas y gráficos interactivos (barras, líneas, tarta) con React y FastAPI.",
     tags: ["React", "Python", "FastAPI", "Pandas"],
@@ -52,7 +28,15 @@ const allProjects = [
     repo: "https://github.com/mmoreno-byte/data-dashboard"
   },
   {
-    id: 7,
+    id: 4,
+    title: "Claude Chat",
+    description: "Chat con IA usando Llama 3.3 a través de Groq API. Backend con Python y Flask, frontend con React. Historial de conversaciones, renderizado Markdown y diseño tipo ChatGPT.",
+    tags: ["React", "Python", "Flask", "IA"],
+    link: "#",
+    repo: "https://github.com/mmoreno-byte/claude-chat"
+  },
+  {
+    id: 5,
     title: "Dev Docs Site",
     description: "Web de documentación técnica personal con proyectos, apuntes de prácticas profesionales y guías. Construida con VitePress y desplegada en Cloudflare.",
     tags: ["VitePress", "Cloudflare", "Markdown"],
@@ -61,7 +45,7 @@ const allProjects = [
   },
 ];
 
-const filters = ["Todos", "React", "JavaScript", "Java", "PHP", "CSS3", "Python", "FastAPI", "Flask", "IA"];
+const filters = ["Todos", "React", "Java", "Python", "FastAPI", "Flask", "IA", "Docker"];
 
 export default function Projects() {
   const [ref, visible] = useInView(0.1);
@@ -116,6 +100,13 @@ export default function Projects() {
           <p className="no-results">No hay proyectos con esa tecnología aún. ¡Pronto! 🚀</p>
         )}
       </div>
-    </section>
+
+      <div className="projects-more">
+        <p>¿Quieres ver el resto de proyectos, apuntes y guías?</p>
+        <a href="https://mmoreno-docs.mdmorenoinfor.workers.dev/" target="_blank" rel="noopener noreferrer" className="project-link">
+          Ver toda mi documentación técnica →
+        </a>
+      </div>
+</section>
   );
 }

@@ -119,6 +119,18 @@
   color: #aaa;
 }
 
+.projects-more {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #333;
+}
+
+.projects-more p {
+  color: #888;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 768px) {
   .projects-grid { grid-template-columns: 1fr; }
 }
