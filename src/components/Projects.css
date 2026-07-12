@@ -131,6 +131,65 @@
   margin-bottom: 10px;
 }
 
+/* Tarjeta-puerta destacada (MM Web Studio) */
+.project-card--featured {
+  display: block;
+  text-decoration: none;
+  background: linear-gradient(135deg, #0c0c10 0%, #18181f 100%);
+  border: 1px solid #5eead433;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-card--featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #5eead4, transparent);
+}
+
+.project-card--featured:hover {
+  transform: translateY(-5px);
+  border-color: #5eead4;
+  box-shadow: 0 12px 40px rgba(94, 234, 212, 0.15);
+}
+
+.project-card--featured h3 {
+  color: #5eead4;
+  font-size: 1.3rem;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(94, 234, 212, 0.1);
+  color: #5eead4;
+  border: 1px solid #5eead466;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tech-tag--accent {
+  background: rgba(94, 234, 212, 0.08);
+  border-color: #5eead433;
+  color: #5eead4;
+}
+
+.project-link--featured {
+  color: #5eead4;
+  font-weight: 600;
+  opacity: 1;
+}
+
 @media (max-width: 768px) {
   .projects-grid { grid-template-columns: 1fr; }
 }

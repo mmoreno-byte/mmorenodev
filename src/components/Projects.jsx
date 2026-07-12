@@ -4,6 +4,15 @@ import './Projects.css';
 
 const allProjects = [
   {
+    id: 'web-studio',
+    title: 'MM Web Studio',
+    description: 'Estudio dedicado al desarrollo de páginas web. Diseño, optimización y mantenimiento de sitios a medida.',
+    tags: ['Estudio', 'Web', 'Diseño'],
+    link: 'https://mm-web-studio.mdmorenoinfor.workers.dev',
+    repo: null,
+    featured: true,
+  },
+  {
     id: 1,
     title: "RAG Document Agent",
     description: "Agente conversacional que permite subir PDFs y hacerles preguntas en cualquier idioma. RAG con LangChain, ChromaDB y Ollama, backend en FastAPI, historial en PostgreSQL, todo dockerizado.",
@@ -74,6 +83,29 @@ export default function Projects() {
 
       <div className="projects-grid">
         {filtered.length > 0 ? filtered.map((p) => (
+          p.featured ? (
+            <a
+              key={p.id}
+              href={p.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card project-card--featured"
+            >
+              <div className="featured-badge">Estudio</div>
+              <h3>{p.title}</h3>
+              <p style={{ color: '#a1a1aa', lineHeight: '1.6' }}>{p.description}</p>
+              <div style={{ marginTop: '15px' }}>
+                {p.tags.map(tag => (
+                  <span key={tag} className="tech-tag tech-tag--accent">{tag}</span>
+                ))}
+              </div>
+              <div className="project-actions">
+                <span className="project-link project-link--featured">
+                  Visitar MM Web Studio →
+                </span>
+              </div>
+            </a>
+          ) : (
           <div key={p.id} className="project-card">
             <h3>{p.title}</h3>
             <p style={{ color: '#aaa', lineHeight: '1.6' }}>{p.description}</p>
@@ -96,6 +128,7 @@ export default function Projects() {
               )}
             </div>
           </div>
+          )
         )) : (
           <p className="no-results">No hay proyectos con esa tecnología aún. ¡Pronto! 🚀</p>
         )}
