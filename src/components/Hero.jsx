@@ -1,6 +1,6 @@
 import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaPython, FaDownload, FaLinkedin } from 'react-icons/fa6';
 import { SiVite, SiJavascript, SiSpringboot, SiMysql, SiPhp, SiOpenjdk } from 'react-icons/si';
-import fotoPerfil from '../assets/perfil.jpg';
+import fotoPerfil from '../assets/perfil.png';
 import useTypewriter from '../hooks/useTypewriter';
 import MatrixBackground from './MatrixBackground';
 import './Hero.css';
@@ -22,7 +22,7 @@ export default function Hero() {
           {displayed}<span className="cursor" />
         </h1>
         <p className="hero-subtitle">
-          Full Stack Developer | Ciberseguridad
+          Desarrolladora Web | Ciberseguridad | Certificada en SAP
         </p>
         <div className="hero-icons">
           <FaHtml5 style={{ ...iconStyle, color: '#e34f26' }} title="HTML5" />
@@ -39,7 +39,7 @@ export default function Hero() {
         </div>
 
         {/* Botón Descargar CV */}
-        <a href="/mmorenodev/cv-loli-moreno.pdf" download className="hero-cv-btn">
+        <a href="/mmorenodev/MDMORENO (2).pdf" download className="hero-cv-btn">
           <FaDownload /> Descargar CV
         </a>
 
