@@ -17,7 +17,7 @@ export default function About() {
           haciendo lo que se me da bien: explicar lo complejo de forma que se entienda.
         </p>
         <p>
-          Llevo dos años desarrollando, he pasado por APIs, seguridad, rendimiento...
+          He pasado por APIs, seguridad, rendimiento...
           y ahora estoy explorando cómo los <strong>LLMs</strong> pueden hacer que las aplicaciones sean
           realmente útiles, no solo algo estético. 
         </p>
