@@ -133,13 +133,6 @@ export default function Projects() {
           <p className="no-results">No hay proyectos con esa tecnología aún. ¡Pronto! 🚀</p>
         )}
       </div>
-
-      <div className="projects-more">
-        <p>¿Quieres ver el resto de proyectos, apuntes y guías?</p>
-        <a href="https://mmoreno-docs.mdmorenoinfor.workers.dev/" target="_blank" rel="noopener noreferrer" className="project-link">
-          Ver toda mi documentación técnica →
-        </a>
-      </div>
 </section>
   );
 }
