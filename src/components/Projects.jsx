@@ -49,7 +49,7 @@ const allProjects = [
     title: "Dev Docs Site",
     description: "Web de documentación técnica personal con proyectos, apuntes de prácticas profesionales y guías. Construida con VitePress y desplegada en Cloudflare.",
     tags: ["VitePress", "Cloudflare", "Markdown"],
-    link: "https://mmoreno-docs.mdmorenoinfor.workers.dev/",
+    link: "https://mmoreno-docs.pages.dev/",
     repo: "https://github.com/mmoreno-byte/mmoreno-docs"
   },
 ];
