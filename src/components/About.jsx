@@ -12,17 +12,14 @@ export default function About() {
       <h2 className="about-title">Sobre mí</h2>
       <div className="about-content">
         <p>
-          ¡Hola! Soy <strong>Loli</strong>, desarrolladora web con formación en <strong>DAW</strong>.
-          Llevo dos años construyendo proyectos reales.
+          ¡Hola! Soy <strong>Loli</strong>. Empecé en educación, enseñando a personas.
+          Luego aprendí a construir código. Ahora llevo dos años creando proyectos reales,
+          haciendo lo que se me da bien: explicar lo complejo de forma que se entienda.
         </p>
         <p>
-          Vengo del mundo de la educación, y esa experiencia me enseñó a explicar lo complejo de forma simple, 
-          algo que aplico tanto al código como a la documentación técnica.
-        </p>
-        <p>
-          Me especializo en desarrollo Full Stack y estoy dando el salto hacia los <strong>LLMs</strong>,
-          porque creo que las aplicaciones más útiles van a ser las que integren IA de forma práctica,
-          no decorativa.
+          Llevo dos años desarrollando, he pasado por APIs, seguridad, rendimiento...
+          y ahora estoy explorando cómo los <strong>LLMs</strong> pueden hacer que las aplicaciones sean
+          realmente útiles, no solo algo estético. 
         </p>
       </div>
     </section>
