@@ -25,7 +25,7 @@ const allProjects = [
     title: "Videogames API + Frontend",
     description: "API REST completa de videojuegos con autenticación JWT, CRUD, filtros y documentación Swagger (Spring Boot), conectada a una aplicación web con login, registro y buscador (React).",
     tags: ["Java", "Spring Boot", "JWT", "React"],
-    link: "#",
+    link: "https://mmoreno-byte.github.io/videogames-frontend/",
     repo: "https://github.com/mmoreno-byte/videogames-api"
   },
   {
