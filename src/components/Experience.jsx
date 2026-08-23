@@ -5,6 +5,14 @@ const timeline = [
   {
     type: 'experiencia',
     title: 'Desarrollo de Aplicaciones Web',
+    place: 'Personal Independiente · En remoto',
+    date: 'May 2026 — Actualidad',
+    description: 'Colaboración externa para modernizar la infraestructura e-learning de una entidad del sector educativo. Auditoría técnica de la plataforma Moodle y los servidores, y migración a Moodle LTS con actualización de PHP (7.4 → 8.x). Configuración de entornos de pruebas para validar plugins antes de producción. Rediseño UI/UX (imagen corporativa, responsive) y consultoría técnica sobre integración de temporizadores compatibles con FUNDAE.',
+    tags: ['Moodle', 'PHP', 'E-learning', 'QA', 'UI/UX']
+  },
+  {
+    type: 'experiencia',
+    title: 'Desarrollo de Aplicaciones Web',
     place: 'ANDWEBSOL SL · En remoto',
     date: 'Feb 2026 — May 2026',
     description: 'Gestión y optimización de contenidos web con Drupal. Desarrollo de scripts en Python para automatización de procesos. Diseño e implementación de APIs para comunicación entre servicios. Redacción de documentación técnica y funcional.',
