@@ -8,7 +8,7 @@ const allProjects = [
     title: 'MM Web Studio',
     description: 'Estudio dedicado al desarrollo de páginas web. Diseño, optimización y mantenimiento de sitios a medida.',
     tags: ['Estudio', 'Web', 'Diseño'],
-    link: 'https://mm-web-studio.pages.dev',
+    link: 'https://web-studio-19p.pages.dev',
     repo: null,
     featured: true,
   },
