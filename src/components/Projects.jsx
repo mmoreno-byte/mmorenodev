@@ -94,7 +94,7 @@ export default function Projects() {
               <div className="featured-badge">Mi estudio</div>
               <h3>{p.title}</h3>
               <p style={{ color: '#a1a1aa', lineHeight: '1.6' }}>{p.description}</p>
-              <div style={{ marginTop: '15px' }}>
+              <div className="tech-tags" style={{ marginTop: '15px' }}>
                 {p.tags.map(tag => (
                   <span key={tag} className="tech-tag tech-tag--accent">{tag}</span>
                 ))}
@@ -109,7 +109,7 @@ export default function Projects() {
           <div key={p.id} className="project-card">
             <h3>{p.title}</h3>
             <p style={{ color: '#aaa', lineHeight: '1.6' }}>{p.description}</p>
-            <div style={{ marginTop: '15px' }}>
+            <div className="tech-tags" style={{ marginTop: '15px' }}>
               {p.tags.map(tag => (
                 <span key={tag} className="tech-tag">{tag}</span>
               ))}

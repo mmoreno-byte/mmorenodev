@@ -3,6 +3,14 @@ import useInView from '../hooks/useInView';
 
 const timeline = [
   {
+    type: 'formacion',
+    title: 'Curso de Especialización en IA y Big Data',
+    place: 'IES Zaidín Vergeles · Granada',
+    date: 'En proceso',
+    description: 'Formación especializada en inteligencia artificial y big data: modelos de machine learning, procesamiento y análisis de grandes volúmenes de datos, y su aplicación a proyectos reales.',
+    tags: ['IA', 'Big Data', 'Machine Learning']
+  },
+  {
     type: 'experiencia',
     title: 'Desarrollo de Aplicaciones Web',
     place: 'Personal Independiente · En remoto',

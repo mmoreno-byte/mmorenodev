@@ -33,7 +33,7 @@
 }
 
 .skill-group {
-  text-align: left;
+  text-align: center;
 }
 
 .skill-group-title {
@@ -48,6 +48,7 @@
 .skill-chips {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px 12px;
 }
 

@@ -23,7 +23,7 @@ export default function Hero() {
         </h1>
         <p className="hero-alias">@mmorenodev</p>
         <p className="hero-subtitle">
-          Desarrolladora Web | Ciberseguridad | Certificada en SAP
+          Desarrolladora Web | Ciberseguridad | IA & Big Data | Certificada en SAP
         </p>
         <p className="hero-location">
           📍 Granada · Presencial, remoto e híbrido
