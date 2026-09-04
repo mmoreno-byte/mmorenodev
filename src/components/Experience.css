@@ -27,6 +27,19 @@
   text-align: center;
 }
 
+.timeline-group-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #71717a;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin: 0 0 24px;
+}
+
+.timeline-group-title:not(:first-of-type) {
+  margin-top: 60px;
+}
+
 .timeline {
   position: relative;
   padding-left: 30px;
@@ -63,8 +76,12 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 2px solid;
+  border: 2px solid #5eead4;
   background: #0a0a0a;
+}
+
+.timeline--formacion .timeline-dot {
+  border-color: #646cff;
 }
 
 .timeline-content {
@@ -83,20 +100,11 @@
 
 .timeline-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 12px;
   flex-wrap: wrap;
   gap: 8px;
-}
-
-.timeline-badge {
-  font-size: 0.75rem;
-  font-weight: 600;
-  border: 1px solid;
-  border-radius: 20px;
-  padding: 3px 12px;
-  letter-spacing: 0.5px;
 }
 
 .timeline-date {
