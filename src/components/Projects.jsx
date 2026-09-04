@@ -37,14 +37,6 @@ const allProjects = [
     repo: "https://github.com/mmoreno-byte/data-dashboard"
   },
   {
-    id: 4,
-    title: "Claude Chat",
-    description: "Chat con IA usando Llama 3.3 a través de Groq API. Backend con Python y Flask, frontend con React. Historial de conversaciones, renderizado Markdown y diseño tipo ChatGPT.",
-    tags: ["React", "Python", "Flask", "IA"],
-    link: "#",
-    repo: "https://github.com/mmoreno-byte/claude-chat"
-  },
-  {
     id: 5,
     title: "Dev Docs Site",
     description: "Web de documentación técnica personal con proyectos, apuntes de prácticas profesionales y guías. Construida con VitePress y desplegada en Cloudflare.",
@@ -70,7 +62,7 @@ const allProjects = [
   },
 ];
 
-const filters = ["Todos", "React", "Java", "Python", "FastAPI", "Flask", "IA", "Docker"];
+const filters = ["Todos", "React", "Java", "Python", "FastAPI", "IA", "Docker"];
 
 export default function Projects() {
   const [ref, visible] = useInView(0.1);
