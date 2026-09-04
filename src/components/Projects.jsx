@@ -54,8 +54,8 @@ const allProjects = [
   },
   {
     id: 6,
-    title: "Job Board TI",
-    description: "Buscador de ofertas de trabajo en informática con filtros por ubicación, tipo y tecnología, consumiendo la API pública de Jooble. Backend en FastAPI, frontend en JavaScript.",
+    title: "Job Board TI (demo)",
+    description: "Buscador de ofertas de trabajo en informática con filtros por ubicación, tipo y tecnología. Backend en FastAPI preparado para consumir la API de Jooble — en esta demo funciona con datos de ejemplo. Frontend en JavaScript.",
     tags: ["FastAPI", "JavaScript", "API REST"],
     link: "https://job-board-32q.pages.dev",
     repo: "https://github.com/mmoreno-byte/job-board"
