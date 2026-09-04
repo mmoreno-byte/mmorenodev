@@ -6,8 +6,8 @@ const allProjects = [
   {
     id: 'web-studio',
     title: 'MM Web Studio',
-    description: 'Estudio dedicado al desarrollo de páginas web. Diseño, optimización y mantenimiento de sitios a medida.',
-    tags: ['Estudio', 'Web', 'Diseño'],
+    description: 'Mi propio estudio de desarrollo web: diseño, marca y código de principio a fin. Esto es lo que hago para mis clientes, desde la primera idea hasta el sitio en producción.',
+    tags: ['Diseño web', 'Desarrollo a medida', 'Marca'],
     link: 'https://web-studio-19p.pages.dev',
     repo: null,
     featured: true,
@@ -91,7 +91,7 @@ export default function Projects() {
               rel="noopener noreferrer"
               className="project-card project-card--featured"
             >
-              <div className="featured-badge">Estudio</div>
+              <div className="featured-badge">Mi estudio</div>
               <h3>{p.title}</h3>
               <p style={{ color: '#a1a1aa', lineHeight: '1.6' }}>{p.description}</p>
               <div style={{ marginTop: '15px' }}>

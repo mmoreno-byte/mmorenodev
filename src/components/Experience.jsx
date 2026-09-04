@@ -38,7 +38,7 @@ const timeline = [
     type: 'experiencia',
     title: 'Docencia (Marketing Digital)',
     place: 'COTEME · Presencial',
-    date: 'Sept 2025 — Set 2025',
+    date: 'Sept 2025',
     description: 'Docencia para la mejora del empleo dirigido al mundo del Marketing y Redes Sociales',
     tags: ['Redes Sociales', 'Marketing digital', 'Innovación']
   },

@@ -6,7 +6,7 @@ import MatrixBackground from './MatrixBackground';
 import './Hero.css';
 
 export default function Hero() {
-  const displayed = useTypewriter('mmorenodev', 80, 600);
+  const displayed = useTypewriter('Loli Moreno', 80, 600);
   const iconStyle = { fontSize: '2.2rem', cursor: 'pointer' };
 
   return (
@@ -21,8 +21,12 @@ export default function Hero() {
         <h1 className="hero-title">
           {displayed}<span className="cursor" />
         </h1>
+        <p className="hero-alias">@mmorenodev</p>
         <p className="hero-subtitle">
           Desarrolladora Web | Ciberseguridad | Certificada en SAP
+        </p>
+        <p className="hero-location">
+          📍 Granada · Presencial, remoto e híbrido
         </p>
         <div className="hero-icons">
           <FaHtml5 style={{ ...iconStyle, color: '#e34f26' }} title="HTML5" />
