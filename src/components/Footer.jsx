@@ -14,7 +14,7 @@ export default function Footer() {
             GitHub
           </a>
           <span className="separator">·</span>
-          <a href="https://linkedin.com/in/maria-dolores-moreno-cabrera-194983151" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/mar%C3%ADa-dolores-moreno-cabrera-194983151/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
             LinkedIn
           </a>
           <span className="separator">·</span>

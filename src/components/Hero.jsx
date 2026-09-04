@@ -52,7 +52,7 @@ export default function Hero() {
           <a href="https://github.com/mmoreno-byte" target="_blank" rel="noopener noreferrer" title="GitHub" className="social-link">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/maria-dolores-moreno-cabrera-194983151" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="social-link">
+          <a href="https://www.linkedin.com/in/mar%C3%ADa-dolores-moreno-cabrera-194983151/" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="social-link">
             <FaLinkedin />
           </a>
         </div>
