@@ -15,9 +15,9 @@ const allProjects = [
   {
     id: 1,
     title: "RAG Document Agent",
-    description: "Agente conversacional que permite subir PDFs y hacerles preguntas en cualquier idioma. RAG con LangChain, ChromaDB y Ollama, backend en FastAPI, historial en PostgreSQL, todo dockerizado.",
-    tags: ["FastAPI", "Docker", "PostgreSQL", "IA"],
-    link: "#",
+    description: "Agente conversacional que permite subir PDFs y hacerles preguntas en cualquier idioma. RAG con LangChain, ChromaDB, embeddings de Cohere y chat vía Groq, backend en FastAPI, historial en PostgreSQL.",
+    tags: ["FastAPI", "PostgreSQL", "IA"],
+    link: "https://mmoreno-byte.github.io/ai-portfolio-agent/",
     repo: "https://github.com/mmoreno-byte/ai-portfolio-agent"
   },
   {
@@ -62,7 +62,7 @@ const allProjects = [
   },
 ];
 
-const filters = ["Todos", "React", "Java", "Python", "FastAPI", "IA", "Docker"];
+const filters = ["Todos", "React", "Java", "Python", "FastAPI", "IA"];
 
 export default function Projects() {
   const [ref, visible] = useInView(0.1);
