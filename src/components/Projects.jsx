@@ -52,6 +52,22 @@ const allProjects = [
     link: "https://mmoreno-docs.pages.dev/",
     repo: "https://github.com/mmoreno-byte/mmoreno-docs"
   },
+  {
+    id: 6,
+    title: "Job Board TI",
+    description: "Buscador de ofertas de trabajo en informática con filtros por ubicación, tipo y tecnología, consumiendo la API pública de Jooble. Backend en FastAPI, frontend en JavaScript.",
+    tags: ["FastAPI", "JavaScript", "API REST"],
+    link: "https://job-board-32q.pages.dev",
+    repo: "https://github.com/mmoreno-byte/job-board"
+  },
+  {
+    id: 7,
+    title: "Sistema de Reservas",
+    description: "API REST para gestionar reservas de un coworking (puestos, salas de reunión, oficinas privadas), con autenticación JWT, roles admin/cliente y validación de solapes de horario.",
+    tags: ["FastAPI", "PostgreSQL", "JWT"],
+    link: "https://sistema-reservas-wub2.onrender.com/docs",
+    repo: "https://github.com/mmoreno-byte/sistema-reservas"
+  },
 ];
 
 const filters = ["Todos", "React", "Java", "Python", "FastAPI", "Flask", "IA", "Docker"];
