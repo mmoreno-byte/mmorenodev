@@ -58,7 +58,7 @@ const allProjects = [
     description: "API REST para gestionar reservas de un coworking (puestos, salas de reunión, oficinas privadas), con autenticación JWT, roles admin/cliente y validación de solapes de horario.",
     tags: ["FastAPI", "PostgreSQL", "JWT"],
     link: "https://sistema-reservas-wub2.onrender.com/docs",
-    linkLabel: "Ver documentación (Swagger)",
+    linkLabel: "Ver documentación",
     repo: "https://github.com/mmoreno-byte/sistema-reservas"
   },
   {
