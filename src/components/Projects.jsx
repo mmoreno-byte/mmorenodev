@@ -58,6 +58,7 @@ const allProjects = [
     description: "API REST para gestionar reservas de un coworking (puestos, salas de reunión, oficinas privadas), con autenticación JWT, roles admin/cliente y validación de solapes de horario.",
     tags: ["FastAPI", "PostgreSQL", "JWT"],
     link: "https://sistema-reservas-wub2.onrender.com/docs",
+    linkLabel: "Ver documentación (Swagger)",
     repo: "https://github.com/mmoreno-byte/sistema-reservas"
   },
   {
@@ -134,7 +135,7 @@ export default function Projects() {
             <div className="project-actions">
               {p.link && p.link !== '#' && (
                 <a href={p.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                  Ver web →
+                  {p.linkLabel || 'Ver web'} →
                 </a>
               )}
               {p.repo && (
