@@ -60,9 +60,17 @@ const allProjects = [
     link: "https://sistema-reservas-wub2.onrender.com/docs",
     repo: "https://github.com/mmoreno-byte/sistema-reservas"
   },
+  {
+    id: 8,
+    title: "SAP-Turismo (colaboración)",
+    description: "Sistema de reservas turísticas construido con el patrón clean core de SAP: backend en ABAP Cloud/RAP (a cargo de mi compañero Jose) y mi capa de extensión de negocio en SAP CAP (validaciones, cálculo de precios, cupos y tests), con Fiori Elements como frontend.",
+    tags: ["SAP", "CAP", "RAP", "Fiori"],
+    link: "#",
+    repo: "https://github.com/mmoreno-byte/SAP-Turismo"
+  },
 ];
 
-const filters = ["Todos", "React", "Java", "Python", "FastAPI", "IA"];
+const filters = ["Todos", "React", "Java", "Python", "FastAPI", "IA", "SAP"];
 
 export default function Projects() {
   const [ref, visible] = useInView(0.1);
