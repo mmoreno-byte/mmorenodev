@@ -63,6 +63,15 @@ const allProjects = [
   },
   {
     id: 8,
+    title: "INE Padrón Pipeline",
+    description: "Pipeline de datos que extrae la población por provincia del INE, la carga en PostgreSQL y la transforma en tres capas analíticas con dbt (tests incluidos). Docker Compose + GitHub Actions despliegan la documentación de linaje en Cloudflare Pages en cada push.",
+    tags: ["Python", "PostgreSQL", "dbt", "Docker"],
+    link: "https://pipeline-docs-7rt.pages.dev",
+    linkLabel: "Ver documentación",
+    repo: "https://github.com/mmoreno-byte/pipeline",
+  },
+  {
+    id: 9,
     title: "SAP-Turismo (colaboración)",
     description: "Sistema de reservas turísticas construido con el patrón clean core de SAP: backend en ABAP Cloud/RAP (a cargo de mi compañero Jose) y mi capa de extensión de negocio en SAP CAP (validaciones, cálculo de precios, cupos y tests), con Fiori Elements como frontend.",
     tags: ["SAP", "CAP", "RAP", "Fiori"],
