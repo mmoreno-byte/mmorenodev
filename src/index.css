@@ -22,11 +22,22 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
-  min-width: 320px;
   min-height: 100vh;
   background-color: var(--bg);
+}
+
+h1, h2, h3, p {
+  overflow-wrap: anywhere;
+}
+
+img, svg, canvas, video {
+  max-width: 100%;
 }
 
 a {
@@ -49,6 +60,10 @@ h1, h2, h3 {
   justify-content: center;
   gap: 16px;
   padding: 30px 60px;
+}
+
+@media (max-width: 600px) {
+  .divider { padding: 20px 20px; }
 }
 
 .divider::before,
