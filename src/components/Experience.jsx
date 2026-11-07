@@ -3,9 +3,16 @@ import useInView from '../hooks/useInView';
 
 const experience = [
   {
+    title: 'Docente de Certificados de Profesionalidad · Informática y Comunicaciones',
+    place: 'Adams Formación (en remoto) · Dipthylom Imagen Digital S.L.L. (presencial, Albolote, Granada)',
+    date: 'Oct 2026 — Actualidad',
+    description: 'Docente habilitada en los grados A, B y C. Imparto el módulo de bases de datos relacionales y el certificado de confección y publicación de páginas web, en modalidad online y presencial. Preparo prácticas con casos reales para que el alumnado termine con proyectos propios, y adapto materiales y ritmo a cada grupo.',
+    tags: ['Docencia', 'Bases de datos relacionales', 'Diseño y publicación web', 'Online y presencial', 'Habilitación docente A, B y C']
+  },
+  {
     title: 'Desarrollo de Aplicaciones Web',
     place: 'Personal Independiente · En remoto',
-    date: 'May 2026 — Actualidad',
+    date: 'Ago 2026 — Oct 2026',
     description: 'Colaboración externa para modernizar la infraestructura e-learning de una entidad del sector educativo. Auditoría técnica de la plataforma Moodle y los servidores, y migración a Moodle LTS con actualización de PHP (7.4 → 8.x). Configuración de entornos de pruebas para validar plugins antes de producción. Rediseño UI/UX (imagen corporativa, responsive) y consultoría técnica sobre integración de temporizadores compatibles con FUNDAE.',
     tags: ['Moodle', 'PHP', 'E-learning', 'QA', 'UI/UX']
   },
